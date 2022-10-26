@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>멀티캠퍼스 남성의류 쇼핑몰</title>
+    <style>
+        /*초기화해주기*/
+        *{
+            margin: 0 0;
+            padding: 0 0;
+        }
+        body {
+            text-align: center;
+            margin-top: 50px;
+        }
+        #title{
+            color: pink;
+            font-size: xx-large;
+            margin-bottom: 50px;
+        }
+        form {
+            text-align: left;
+            font-size: larger;
+            margin-left: 250px;
+        }
+        .inputCss{
+            width: 200px;
+            height: 20px;
+            border: 2px solid #ada8a8ef;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        #labelCss{
+            margin-bottom: 20px;
+            
+        }
+        #btnCss{
+            color: #fff;
+            background: blueviolet;
+            font-size: 1.1em;
+            border-radius: 0.5em;
+            padding: 5px 20px;
+            margin-top: 50px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="title"> 회원가입하기</h1>
+        <form action="memberjoin.jsp" method="post">
+            <label id="labelCss"> 아이디 <input type="text" name="id" class="inputCss" id="id"> <input type="button" value="중복확인" onclick="id_check()"</label> <br>
+            <label id="labelCss"> 비밀번호 <input type="password" id="password" class="inputCss"> </label> <br>
+            <label id="labelCss"> 비밀번호확인 <input type="password" id="re_password" name="passwordCheck" class="inputCss"> </label> <br>
+            <label id="labelCss"> 이&nbsp; &nbsp; &nbsp;름 <input type="text" name="name" class="inputCss" > </label> <br>
+            <label id="labelCss"> 생년월일 <input type="number" placeholder="년도(숫자4개)">
+                  <select name="month">
+                    <option value="1"> 1 </option>
+                    <option value="2"> 2 </option>
+                    <option value="3"> 3 </option>
+                    <option value="4"> 4 </option>
+                    <option value="5"> 5 </option>
+                    <option value="6"> 6 </option>
+                    <option value="7"> 7 </option>
+                    <option value="8"> 8 </option>
+                    <option value="9"> 9 </option>
+                    <option value="10"> 10 </option>
+                    <option value="11"> 11 </option>
+                    <option value="12"> 12 </option>
+                  </select>
+                  월
+                  <input type="number" name="day" placeholder="일"> <br>
+                </label>
+                <label id="labelCss"> 성&nbsp;&nbsp;&nbsp;&nbsp;별 <input type="radio" name="gender" value="man"> 남자
+                    <input type="radio" name="gender" id="male" value="woman"> 남자
+                    <input type="radio" name="gender" id="female" value="woman"> 여자
+                </label><br>
+                <label id="labelCss"> 전화번호 <input type="tel" name="tel" class="inputCss" placeholder="-없이숫자만"><br>
+                <label id="labelCss"> 
+                    이메일 
+                    <input type="text" id="email_1" name="email1" class="inputCss"> @ 
+                    <input type="text" name="email2" id="email_2" name="email2" class="inputCss">
+                <select name="email3" id="email_3" onchange="change_email()">
+                    <option value=""> 직접입력</option>
+                    <option value="gmail.com"> gmail.com</option>
+                    <option value="naver.com"> naver.com</option>
+                    <option value="daum.com"> daum.com</option>
+                </select>
+                </label> <br>
+                <label id="labelCss"> 기본주소
+                    <input type="text" name="addr" class="inputCss">
+                </label><br>
+                <label id="labelCss"> 상세주소
+                    <input type="text" name="addr2" class="inputCss">
+                </label><br>
+                <label id="labelCss"> 약관동의
+                    <input type="checkbox" name = "chkBox"> 회원으로 가입합니다
+                </label> <br>
+                <input type="button" value="이전페이지" id="btnCss">
+                <input type="submit" value="기본페이지" id="btnCss">
+                <input type="reset" value="다시작성하기" id="btnCss">
+
+         </form>
+    </div>
+    
+</body>
+<script>
+    function id_check() {
+        //id중복확인코드
+        //중복확인 버튼을 누르면 이 부분이 호출되어서 수행됨
+        console.log(id.value);
+        if(id.value == 'admin') {
+            alert("이미가입된회원입니다");
+            id.value='';
+            id.focus();
+            false;    
+        }else {
+            alert("가입가능한 아이디입니다");
+        }
+    }
+    function change_email() {
+        //이메일 뒷부분 자동입력
+        console.log(email_3.options.selectedIndex); //select option 태그에서 선택한 index 번호를 출력함
+        console.log(email_3.options[2].value);
+        //자바스크립트 변수는 var set let
+        var eos = email_3.options.selectedIndex;
+        console.log(eos);
+        console.log(email_3.options[eos].value);
+        //email id 안에다가 email_3.options[eos].value를 넣어주면된다
+        email_2.value=email_3.options[eos].value;
+    }
+    function history_back() {
+        //이전으로 되돌아가기버튼  
+        history.back();      
+    }
+    function member_chk() {
+        //가입하기버튼을 누를때 유효성검사를 모두 통과되면 submit로 만들어서 보내기
+        //if 조건문 공백이면 다시 입력해주세요
+        //유효성 검사 예를 들면 비밀번호 영문자 특수문자 숫자 8~24자 사이인것 확인하기
+        var id = document.getElementById("id"); //필수
+        var password = document.getElementById("password"); //필수
+        var re_password = document.getElementById("re_password"); //필수
+        var name = document.getElementById("name");
+        var male = document.getElementById("male");
+        var female = document.getElementById("female");
+        var tel = document.getElementById("tel");
+        var email_1 = document.getElementById("email_1");
+        var email_2 = document.getElementById("email_2");
+        var addr1 = document.getElementById("addr1");
+        var addr2 = document.getElementById("addr2");
+        var agree = document.getElementById("agree");
+
+        if(id.value == ' ') {
+            alert("아이디를 입력하세요");
+            id.focus();
+            return false;
+        }
+        if(password.value == ' ') {
+            alert("비밀번호를 입력하세요");
+            id.focus();
+            return false;
+        }
+        if(re_password.value == ' ') {
+            alert("비밀번호확인를 입력하세요");
+            id.focus();
+            return false;
+        }
+        if(tel.value == ' ') {
+            alert("전화번호를 입력하세요");
+            id.focus();
+            return false;
+        }
+        if( !agree.checked ) {
+            alert("약관에 동의하세요");
+            return false;
+        }
+        //비밀번호와 비밀번호 확인 일치하는 문자인지 확인하기 -2단계 
+        //비밀번호는 영문자 숫자 특수문자 8~12자 사이만 가능 -단계 ---정규표현식
+        var pwReq = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[~!@#4%^&*+])[A-Za-z\d~!@#4%^&*+]{8,12}$/g
+        if(!pwReq.test(password.value)) {
+            alert("비밀번호가 틀렸습니다. 비밀번호는 영문자+숫자+특수문자(~!@#$%)의 8~12글자의 조합입니다")
+            password.value='';
+            password.focus();
+            return false;
+        }
+
+        // 비밀번호와 비밀번호 확인 일치하는지 검색
+        if(password.value != re_password.value) {
+            alert("비밀번호와 비밀번호확인이 틀리다")
+            re_password.value='';
+            re_password.focus();
+            return false;
+        }
+
+    
+    }  
+</script>
+</html>

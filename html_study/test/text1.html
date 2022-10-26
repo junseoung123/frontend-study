@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- 3바이트 문자시스템-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- explorer Edge 웹페이지로 사용가능-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 안드로이드에서 웹페이지를 볼 때 pc하고 안드로이드가 해상도가 다르고 가로 세로 비율도 다르고
+         안드로이드에서 비율 깨지지 말고 잘보이게-->
+    <title> 문서의 제목 </title>
+</head>
+<body>
+    <form method="post" action="input.jsp">
+        <input type="hidden" value="클라이언트 볼 수 없는 자료 서버로 보내야 하는 것">
+        <input type="text" name="schoolname">
+        <input type="file" name="fileName">
+        <input type="submit" value="제출하기"> <br>
+        <label>아이디 <input type="text" name="id"> </label>
+        <label for="id"> 아이디</label>
+        <input type="text"for="id" >
+        <input type="radio" name="gender">남자 
+        <input type="radio" name="gender">여자
+        <select>
+            <option name="분식" value="김밥"> 김밥 </option>
+            <option> 떡볶이</option>
+            <option> 순대</option>
+            <option> 어묵</option>
+        </select> 
+        <textarea>
+            Text태그
+            Text태그
+        </textarea>
+    </form>
+    <div id="headerPart">
+            이곳은 머리부분입니다
+    </div>
+    <div id="contentPart">
+        이곳은 본문부분입니다
+    </div>
+    <div id="footerPart">
+        이곳은 머리말부분입니다
+    </div>
+    <span id="headerPart">
+        이곳은<b> 머리</b>부분 <small>입니다</small> 해당글자 크기만큼만 자리차지
+    </span>
+    <span id="contentPart">
+        이곳은 본문부분입니다
+    </span>
+    <span id="footerPart">
+        이곳은 머리말부분입니다
+    </span>
+</body>
+</html>

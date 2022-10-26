@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /*초기화*/
+       * {
+        margin:0;
+        padding: 0;
+       } 
+       body{
+         margin: 0 auto;
+         width: 960px;
+       }
+       div.cotainer {
+        overflow: hidden;
+       }
+       div.item {
+         float: left;
+         margin: 0 3px;
+         padding: 10px;
+         border: 1px solid black;
+       }
+       div.clear {
+         clear:left; /* float:left로 준 css명령을 취소한 것*/
+       }
+    </style>
+</head>
+<body>
+   <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra eleifend diam at vehicula. Donec et quam pharetra, consequat erat id, finibus nulla. Phasellus vitae hendrerit nibh, ut maximus elit. Aliquam bibendum tellus nulla, sagittis aliquet enim mattis quis. Nullam cursus neque a neque maximus, eu lacinia nisl elementum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam posuere diam sit amet mattis feugiat. Quisque tincidunt mauris vulputate mi mattis porta. Ut semper nisi sed ex vehicula euismod. Aliquam luctus pulvinar dui vitae aliquam. Cras sodales lectus a massa porta, non lacinia mauris tincidunt. Sed ut justo eget nulla dictum feugiat ac eu velit. Nulla vestibulum lacus quis enim rhoncus aliquet. </p> 
+   <div class="container" >
+    <div class="item"> 메뉴-1</div>  
+    <div class="item"> 메뉴-2</div>  
+    <div class="item"> 메뉴-3</div>  
+    <div class="item"> 메뉴-4</div>  
+  </div> 
+  <div class="clear"></div>
+  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra eleifend diam at vehicula. Donec et quam pharetra, consequat erat id, finibus nulla. Phasellus vitae hendrerit nibh, ut maximus elit. Aliquam bibendum tellus nulla, sagittis aliquet enim mattis quis. Nullam cursus neque a neque maximus, eu lacinia nisl elementum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam posuere diam sit amet mattis feugiat. Quisque tincidunt mauris vulputate mi mattis porta. Ut semper nisi sed ex vehicula euismod. Aliquam luctus pulvinar dui vitae aliquam. Cras sodales lectus a massa porta, non lacinia mauris tincidunt. Sed ut justo eget nulla dictum feugiat ac eu velit. Nulla vestibulum lacus quis enim rhoncus aliquet. </p> 
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 언제나 신선하게 </title>
+    <link rel="stylesheet" type="text/css" href="meatCss.css">
+</head>
+<body>
+    <div id="menu1">
+        <ul>
+            <li style="width: 180px; position: relative; top:-10px; ">
+                <a href="#">
+                    <img src="./img/logo.png" alt="홈으로" id="logo">
+                </a>
+            </li>
+            <li id="left">
+                <a href="#" > 쇼핑하기 </a>
+            </li>
+            <li id="left">
+                <a href="#" > 배송안내 </a>
+            </li>
+            <li id="left">
+                <a href="#" > 이벤트 </a>
+            </li>
+            <!-- 가운데 여백 -->
+            <li style="width: 330px;"></li>
+            <li id="right">
+                <a href="#" > 공지사항 </a>
+            </li>
+            <li id="right">
+                <a href="#" > 고객센터 </a>
+            </li>
+            <li style="width: 5px; color:white" id="right">|</li>
+            <li id="right">
+                <a href="#" > 로그인 </a>
+            </li>
+            <li id="right">
+                <a href="#" > 회원가입 </a>
+            </li>
+            <li id="right">
+                <a href="#" > 
+                   <img src="./img/cart.png" alt="장바구니" id="cartMenu">    
+                </a>
+            </li>
+            <li>
+                <a href="#" id="right"> 
+                   <img src="./img/menu.png" alt="메뉴" id="cartMenu">    
+                </a>
+            </li>
+        </ul>  
+
+    </div> <!-- header nav 부분 -->
+    <div id="bannerImg">
+        <p style="top:160px; left:-250px; 
+                  position: relative;
+                  font-size: 60px;
+                  font-weight: bold;
+                  font-family: 'Malgun Gothic';" >
+            초신선배송
+        </p>
+        <br>
+        <p style="position: relative; 
+                  font-weight: bold;
+                  top:140px;
+                  left:-250px;
+                  font-size: 18px;">
+            고기의 초신선함을 식탁까지 온전하게</p>
+       <img src="./img/banner1.png"  alt="배너1"
+            style="position: relative;
+                   left:250px;
+                   bottom:20px;" >
+    </div> <!-- 초신선배송 광고부분-->
+    <div id="delivery1">
+       <p style="position: relative;
+                 top:150px; left:0px;
+                 font-size: 35px;
+                 font-weight: bolder;
+                 font-family: 'Malgun Gothic';  ">
+         어떻게 초신선 배송이 이루어지나요?
+       </p> 
+       <img src="./img/2_fast_delivery.png" alt="빠른배송"  
+             style="position: relative; top: 180px; padding-right: 20px" >
+       <img src="./img/2_safety_package.png" alt="신선한 포장"
+             style="position: relative; top: 180px ; padding-right: 20px">
+       <img src="./img/2_delivery_location.png" alt="다양한 지역으로 확장"
+             style="position: relative; top: 180px; padding-right: 20px">
+       <ul id="deli_text">
+          <li> 빠른 배송 </li>
+          <li> 안전하고 신선한 포장</li>
+          <li> 다양한 지역으로의 확장</li>
+
+       </ul>
+       <ul id="deli_text2">
+          <li> 아침에 낳은 달랼을 저녁에 <br>
+               받아보실 수 있도록<br>
+               최대한 빠르게 배송합니다.
+          </li>
+          <li> 수차례 배송테스트를 거친 <br>
+               간단한 포장으로<br>
+               안전하게 배송합니다
+          </li>
+         <li> 초신선 상품을 더 많은 분들과 <br>
+              함께 하기 위해<br>
+              당일 배송, 새벽배송 지역을<br>
+              계속 넓힙니다.         </li>
+       </ul>
+    </div> <!-- 어떻게 초신선 배송이 이루어지나요?-->
+    <div id="searchBtn">
+        <p style="position: relative;top:270px;
+        font-size:30px">
+            우리집에 어떤 초신선배송이 오는지<br>
+            지금 확인하세요  
+        </p>
+        <a href="#"> 
+            <img src = "./img/search.png"  
+            style="position: relative;top:270px;" >
+        </a>
+    </div> <!-- 검색 버튼 -->
+    <div id="deli_btn">
+       <button onclick="dayDeliver()" 
+               style="border:none; background-color: white;
+               color: rgb(0,0,0); font-weight: bolder;
+               padding: 10px; font-size: 25px; 
+               position: relative; top: 100px; "> 
+               당일배송 
+        </button>
+        <button onclick="dwanDeliver()" 
+               style="border:none; background-color: white;
+               color: rgb(109,109,109); font-weight: bolder;
+               padding: 10px; font-size: 25px; 
+               position: relative; top: 100px;"> 
+               새벽배송 
+        </button>
+        <button onclick="basicDeliver()" 
+               style="border:none; background-color: white;
+               color: rgb(109,109,109); font-weight: bolder;
+               padding: 10px; font-size: 25px; 
+               position: relative; top: 100px;"> 
+               택배배송 
+        </button>
+        <hr width="400px" style="position: relative; margin:0% auto ; top:105px" >
+        <p id = "del" style="position:relative; top:150px; font-size:40px; front-weight:bold;">
+              당일배송 
+        </p>
+        <p id="delSub" style="position: relative; top:170px; font-size:20px;
+                              font-weight: bold;">
+          <img style="position: relative; top:5px;"  src="./img/checkBox.png">                    
+            오전에 주문하면 저녁 전에 도착!  
+        </p>
+        <table>
+          <tr>
+            <td id="tleft1"> ㅁ주문</td>
+            <td id="tright1"> 낮 12시까지 </td>
+          </tr>
+          <tr>
+            <td id="tleft2"> ㅁ배송</td>
+            <td id="tright2"> 당일 오전 7시 전 </td>
+          </tr>
+          <tr>
+            <td id="tleft3"> ㅁ배송일</td>
+            <td id="tright3"> 월-금 </td>
+          </tr>
+          <tr>
+            <td id="tleft4"> ㅁ배송비</td>
+            <td id="tright4"> 3,500원 </td>
+          </tr>
+        </table>
+        <p style="position: relative; top:200px; font-size: 14px;
+                     font-weight: bold; color: rgb(95,95,95);" >
+          교통상황에 따라 배송이 지연될 수 있습니다.<br>
+          주소지의 당일 배송 지역 해당 여부는 [배송 지역 검색]에서
+          확인하실 수 있습니다 
+        </p>
+    </div> <!-- 당일배송 새벽배송 택배배송 화면-->
+    <script>
+       function dayDeliver(){
+            var del = document.getElementById("del");
+            var delSub = document.getElementById("delSub");
+            var tleft1 = document.getElementById("tleft1");
+            var tleft2 = document.getElementById("tleft2");
+            var tleft3 = document.getElementById("tleft3");
+            var tleft4 = document.getElementById("tleft4");
+            var tright1 = document.getElementById("tright1");
+            var tright2 = document.getElementById("tright2");
+            var tright3 = document.getElementById("tright3");
+            var tright4 = document.getElementById("tright4");
+
+            del.innerText = "당일배송";
+            delSub.innerText = "오전에 주문하면 저녁 전에 도착";
+            tright1.innerText = "오전 8시까지";
+            tright2.innerText ="다음날 오전 7시 전";
+            tright3.innerText = "월-토"
+            tright4.innerText = "3,500원"
+       }
+       function dwanDeliver() {
+            var del = document.getElementById("del");
+            var delSub = document.getElementById("delSub");
+            var tleft1 = document.getElementById("tleft1");
+            var tleft2 = document.getElementById("tleft2");
+            var tleft3 = document.getElementById("tleft3");
+            var tleft4 = document.getElementById("tleft4");
+            var tright1 = document.getElementById("tright1");
+            var tright2 = document.getElementById("tright2");
+            var tright3 = document.getElementById("tright3");
+            var tright4 = document.getElementById("tright4");
+
+            del.innerText = "새벽배송";
+            delSub.innerText = "저녁에 주문하면 다음날 아침전에 도착";
+            tright1.innerText = "낮 12시까지";
+            tright2.innerText ="당일 오전 7시 전";
+            tright3.innerText = "월-금"
+            tright4.innerText = "4,500원"
+       }
+       function basicDeliver(){
+        var del = document.getElementById("del");
+            var delSub = document.getElementById("delSub");
+            var tleft1 = document.getElementById("tleft1");
+            var tleft2 = document.getElementById("tleft2");
+            var tleft3 = document.getElementById("tleft3");
+            var tleft4 = document.getElementById("tleft4");
+            var tright1 = document.getElementById("tright1");
+            var tright2 = document.getElementById("tright2");
+            var tright3 = document.getElementById("tright3");
+            var tright4 = document.getElementById("tright4");
+
+            del.innerText = "택배배송";
+            delSub.innerText = "오후에 주문하면 다음날 저녁전에 도착";
+            tright1.innerText = "오후 8시까지";
+            tright2.innerText ="다음날";
+            tright3.innerText = "화-토"
+            tright4.innerText = "2,500원"
+       }
+    </script>
+</body>
+</html>

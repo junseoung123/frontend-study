@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Malgun Gothic";
+}
+
+body {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#menu1 {
+    width: 100%;
+    height: 95px;
+    background-color: #000;
+    z-index: 10;
+    position: fixed;
+}
+#menu1 ul{
+    display: inline-block;
+    margin: 20px;
+}
+#menu1 ul li {
+    float: left;
+    height: 100%;
+    line-height: 65px;
+    text-align: center;
+    background-color: black;
+    position: relative;
+    height: 75px;
+}
+#menu1 ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+#left{
+    width: 90px;
+    
+}
+#right{
+    font-size: 15px;
+    width: 90px;
+}
+#cartMenu{
+    position: relative;
+    top: -3px;
+    width: 40px;
+}
+#bannerImg{
+    padding-top: 150px;
+}
+#bannerImg{
+    position: relative;
+    top: 95px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+    background-color: #f4f4f4;
+    height: 500px;
+}
+#deli_text li{
+     position: relative;
+     float: left;
+     font-size: 20px;
+     font-weight: bold;
+     left: 300px;
+     padding: 50px;
+     text-align: center;
+     top:180px;
+    
+}
+#deli_text2 li{
+    color: rgb(83, 83, 83);
+    position: relative;
+    text-align: center;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    top: 280px;
+    left: -450px;
+    padding: 10px;
+}
+#searchBtn li{
+    clear: both;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1600px;
+    background-color: #f4f4f4;
+    height: 500px;
+    text-align: center;
+}
+#deli_btn {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1600px;
+    background-color: white;
+    text-align: center;
+    height: 900px;
+}
+#deli_btn table{
+    position: relative;
+    top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
