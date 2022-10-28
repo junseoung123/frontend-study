@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>43 JSON parse() JSON stringify() 함수</title>
+</head>
+<body>
+    <p>
+        문자열 --- JSON.parse( ) --->json형식
+               <--- JSON.stringify() <----
+    </p>
+</body>
+</html>
+<script>
+    let stringVal = '{"name":"홍길동","age":23}'; //문자열이고 속안의 내용이 json자료형식임
+    let jsonVal = JSON.parse( stringVal);
+
+    console.log(stringVal);
+    console.log(jsonVal);
+
+    let stringVal2 = JSON.stringify(jsonVal); //json형식의 자료를 문자화하기
+    console.log(stringVal2); //문자열
+</script>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21함수 3</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function callCount(count) {
+         count = count; //?? "unknown";
+         console.log(count);
+    }
+    callCount(10);
+    callCount("홍길동");
+    callCount(""); //"" 공백문자 count변수안에 공백이라는 자료가 들어 있다.
+    callCount(null); //null - 빈문자열 count변수안에 빈문자열이 들어있다
+    callCount(); //undefined - 정의되지않았다 count변수안에 아무것도없다
+</script>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상속</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let person={
+        "name":"홍길동", "age":23, "phone":"010-314-4252",
+        "display":function() {
+            console.log(this.name);
+            console.log(this.age);
+            console.log(this.phone);
+        },
+        "setValue":function(name="", age=0, phone="") {
+            this.name = name;
+            this.age = age;
+            this.phone = phone
+        },
+    }
+    //__proto__"밑줄 2개로 시작하는 변수나 키들은 자바스크립트가 제공함
+    //내장변수
+    //자바스크립트에서 상송의 형식은 __proto__:부모객체명
+    //student객체는 person의 자식이다
+    let student = { __proto__ : person, "name":"홍순이", "email":"cc@naver.com",
+                   "childDis":function(){
+                    console.log("============");
+                    console.log(this.name);
+                    console.log(this.age);
+                    console.log(this.phone);
+                    console.log(this.email);
+                   },
+                    "display":function(){
+                     console.log("============");
+                     console.log(this.name);
+                     console.log(this.age);
+                     console.log(this.phone);
+                    console.log(this.email);
+                    }
+                }
+        student.childDis();
+        student.display(); //부모에게도 display()함수가 있고 자식에게 없다면 부모메소드 호출
+        student.setValue("자식2", 50, "010-333-3333"); //자식의 객체로 
+        person.display();
+        //person.childDis(); //부모객체가 자식의 함수를 호출할수 있을까?
+</script>

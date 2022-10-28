@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    //함수도 변수의 일종이라서 함수를 매개변수로 전달할수있따
+    //이 부분을 시스템임
+    /* call = function() {
+        console.log("콜백함수 모습 직접함수를만들었다")
+    }*/
+    function callFunction(call) {
+        console.log("=================");
+        call();
+        console.log("==============");
+    }
+
+    function display() {
+        console.log("callback함수입니다");
+    }
+
+    function gugudan() {
+        for(i=1; i<10; i++) {
+            console.log( ` 4X ${i} = ${4*i} `);
+        }
+    }
+
+    callFunction( display );
+    callFunction( gugudan );
+    callFunction( function() {
+        console.log("콜백함수 모습 직접함수를만들었다")
+    } );
+</script>

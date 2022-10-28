@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>40 객체와 메소드</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    //객체안에 함수를 매소드라고 부른다
+    //객체안에 메소드에서 해당 필드를 부르려면 this.필드명 this는 자바스크립트에서 생략안됨
+    let person = { "name":"홍길동", "age":23, "phone":"010-222-2222", 
+    "display":function() {
+        console.log(this.name); //자바스크립트에서는 this 생략x
+        console.log(this.age);
+        console.log(this.phone);
+                    },
+                    "setValue":function( name="", age=20, phone="010-111-1111" ) {
+                             this.name=name;
+                             this.age=age;
+                             this.phone=phone;
+                    },
+                   /*객체안에서는 화살표함수 못쓴ㄷ다
+                   "a":(()=> {
+                    console.log(this.name); //자바스크립트에서는 this 생략x
+                    console.log(this.age);
+                    console.log(this.phone);
+                   })*/ 
+    }
+    person.display();
+    person.setValue("정현희", 25, "010-123-4567");
+    person.display();
+    person.setValue("이명자");
+    person.display();
+    person.setValue();
+    person.display();
+    person.setValue("",30);
+    person.display();
+    console.log("--------------");
+    person.setValue("정현희", 25, "010-123-4567");
+    //person.a();
+    let counter= { "count":10, 
+                   "decrease": function() {
+                    this.count -=1;
+                   },
+                   "increase":function() {
+                    this.count+=1;
+                   },
+                   "countDis":function() {
+                    coun=5;
+                    console.log(count);
+                    console.log(this.count);
+                   }
+}
+counter.increase();
+counter.decrease();
+counter.decrease();
+counter.decrease();
+counter.countDis();
+</script>

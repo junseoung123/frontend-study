@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17 JSON 구조</title>
+</head>
+<body>
+    <script>
+        //JSON javascript Object Notation약자
+        //자바스크립트는 클래스보다 객체를 저장하는 방법을 JSON채택함
+        //현재는 표준 react vue 프론트엔드쪽과 백앤드쪽에서 데이터를 주고받을때 JOSN사용합니다
+        //xml파일(사라지는추세) json(더많이 사용하는추세)
+        //json은 자바에서 map과 비슷함 키와 값으로 구성됨
+        //json형식은 {키:값} 
+        // { } 객체라는 의미
+        var date = {"name" : "홍길동", "age":27};
+        console.log(data["name"], data["age"]);
+        console.log( data.name, data.age);
+
+        var movie = [
+            {"title":"내일을 향해 쏴라", "actor":"폴뉴먼, 로버트레드포드"},
+            {"title":"스팅", "actor":"폴뉴먼, 로버트레드포드"},
+            {"title":"마이페어레이디", "actor":"오드리햅번"},
+            {"title":"로마의휴일", "actor":"오드리햅번 르레고리팩"},
+            {"title":"위대한개츠비", "actor": "로버트레드포드"},
+            {"title":"앵무새죽이기", "actor":"그래고리팩"},
+            {"title":"다이하드", "actor":"브루스윌리스"}
+         ]; //배열의 요소로 객체를 넣음
+
+         
+
+        for(i=0; i<movie.length; i++) {
+            console.log(movie[i]["title"], movie[i]["actor"]);
+        }
+        for(i=0; i<movie.length; i++) {
+            console.log(movie[i].title, movie[i].actor);
+        }
+        for (i in movie) {
+            console.log(movie[i]["title"], movie[i]["actor"]);
+        }
+        for (i in movie) {
+            console.log(movie[i].title, movie[i].actor);
+        }
+        for(item of movie){
+            console.log(item["title"], item["actor"]);
+        }
+        for(item of movie){
+            console.log(item.title, item.actor);
+        }
+
+        
+        </script>
+</body>
+</html>

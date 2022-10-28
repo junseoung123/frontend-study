@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. 입력방법</title>
+</head>
+<body>
+    <form aciton="" method="get">
+        <input type="text" name="xvalue" id="yvalue">
+        <button type="button" onclick="inputEx()"> 값읽기 </button>
+    </form>
+</body>
+</html>
+<script>
+    
+    //브라우저가 로드될때 숫자를 input위치에 바로 나타나게 처리 window.onload
+    window.onload = function() {
+        //input위치에 값을 넣어주기
+        //1단계 input위치 얻기 1) id속성이용 2) name속성이용
+        // 1) id속성 let yv = document.getElementById("yvalue");
+        let xv = document.getElementsByName("xvalue")[0];
+        //2단계 얻어진 위치에 값을 넣기
+        // 1)yv.value = 1234;
+        xv.value = 5678;
+    }
+
+    //input위치에 있는 값을 얻어와서 alert문으로 띄우기
+    function inputEx() {
+        // 1) id속성으로
+        // let yv = document.getElementById("yvalue");
+        // alert(yv.value)
+         let xv = document.getElementsByName("xvalue")[0];
+         alert(xv.value);
+    }
+
+</script>

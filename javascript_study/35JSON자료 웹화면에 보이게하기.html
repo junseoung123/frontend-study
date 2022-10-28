@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    현재 데이터 갯수 <span id="result"> </span>
+    <table style="width:80%; border-top:1px solid blue">
+    <colgroup>
+        <col width="33%">
+        <col width="33%">
+        <col width="33%">
+    </colgroup> 
+    <thead>
+        <th> 이름</th>
+        <th> 전화번호</th>
+        <th> 이메일</th>
+    </thead>
+    <tbody id="tbody">
+        
+    </tbody>
+</table>
+</body>
+</html>
+<script>
+   let person =[
+    {name:"한상익", phone:"010-9083-1111", email:"hansy@daum.net"},
+    {name:"오주영", phone:"010-9083-1112", email:"ojy@daum.net"},
+    {name:"김의형", phone:"010-9083-1113", email:"kyh@daum.net"},
+    {name:"박성신", phone:"010-9083-1114", email:"pss@daum.net"},
+    {name:"조윤호", phone:"010-9083-1115", email:"choyh@daum.net"},
+    {name:"박창민", phone:"010-9083-1116", email:"pchm@daum.net"},
+   ];
+   person.forEach((obj)=>{
+    //console.log(obj);
+    console.log(obj.name, obj.phone, obj.email);
+    });
+
+    function loadData() {
+        //자료를 tbody에 넣어주는 함수
+        let tbody = document.getElementsByClassName("tbody");
+        person.forEach((obj)=>{
+            //1. 새로운행을 만든다
+            row = tbody.insertRow(tbody.rows.length);
+            console.log(tbody.rows.length+"-현재행의 위치");
+            //2. 새로운 칸을 만든다
+            cell0 = row.insertCell(0);
+            cell1 = row.insertCell(1);
+            cell2 = row.insertCell(2);
+            //3. 자료를 넣어준다 
+            cell0.innerHTML = obj.name;
+            cell1.innerHTML = obj.phone;
+            cell2.innerHTML = obj.email;
+        });
+        document.getElementById("result").innerHTML = tbody.rows.length;
+    }
+    
+    //실행하자마자 바로 출력하는 함수를 호출하기
+    window.onload = loadData;
+</script>

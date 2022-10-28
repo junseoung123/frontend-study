@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>32 정렬</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let scores=[
+        {name:"홍길동", kor:90, eng:80, mat:70},  //item 한덩어리
+        {name:"야야야", kor:80, eng:80, mat:80},
+        {name:"갸갸갸", kor:70, eng:70, mat:70},
+        {name:"냐냐냐", kor:60, eng:60, mat:70},
+        {name:"댜댜댜", kor:100, eng:100, mat:90},
+        {name:"먀먀먀", kor:100, eng:100, mat:100},
+    ];
+    //문제1 forEach를 데이터를 출력하기
+    scores.forEach((item)=>{ 
+        //console.log(item["name"],item["kor"],item["eng"],item["mat"])
+        console.log(item.name, item.kor, item.eng, item.mat);
+    });
+    //문제2 forEach를 쓰고 총점을 구하기
+    scores.forEach((item) => {
+              //item["total"] = item.kor + item.eng + item.mat;  //"total"의 새로운 키가 추가됨
+              item.total = item.kor + item.eng + item.mat;
+            });
+    console.log("-----------------");
+    scores.forEach((item)=>{ 
+    console.log(item.name, item.kor, item.eng, item.mat, item.total);
+    });
+    //문제3 총점으로 정렬하기 sort()함수 반환값이 음수, 0 , 양수 
+    let sorted1 = scores.sort((item1, item2)=> item1.total - item2.total); //오름차순정렬
+    console.log("-----------------");
+    scores.forEach((item)=>{ 
+       console.log(item.name, item.kor, item.eng, item.mat, item.total);
+    });
+</script>

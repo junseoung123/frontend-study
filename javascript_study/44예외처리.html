@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>44 예외처리하기</title>
+</head>
+<body>
+    자바식으로 된 예외처리
+    try{
+        //처리할코드
+    } catch( Exception명 변수명) {
+        e.printStractrace();
+    } finally{
+        //예외와 상관없이 처리해 주어야하는 코드구현
+    }
+
+    //메소드호출해서 메소드에서 예외가 발생하면 호출한 곳으로 예외를 던지기
+    void a() { b(); };
+    void b() { c(); };
+    void c() throws FilenotFoundException{
+        //예외발생함
+    }
+
+    자바스크립트로 된 예외처리
+    try {
+
+    }catch(e) {
+        //catch문에서 변수명안으로 erro 메세지가 담긴다   
+        console.log(e);
+    }finally{
+
+    }
+</body>
+</html>
+<script>
+    try{
+    let data = '{"bad":"jsonparse"}';
+    let jsonData = JSON.parse(data);
+
+    console.log(data);
+    console.log(jsonData);
+    } catch(e) {
+        console.log("--이곳은 예외가 발생하면 처리되는곳--");
+        console.log(e);
+    }finally {
+     console.log("--이곳은 언제나 처리되는곳--");
+    }
+</script>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>34 문제</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let arr=[-1,3,2,-9,8,7,-12,4,55];
+
+    //forEach를 사용해서 음수 출력하기
+    arr.forEach((a)=> {
+        if(a<0) console.log(a); 
+    
+    });
+    console.log(" --------------- ");
+    //forEach를 사용해서 양수 출력하기
+    arr.forEach((a)=> {
+        if(a>0) console.log(a); 
+    
+    });
+    console.log(" --------------- ");
+    //filter 각요소를 받아서 특정조건만족 true반환 아니면 false
+    //매개변수를 주면 결과값이 true인 요소들만 하나의 배열로 만들어서 반환한다.
+    //filter사용해서 양수배열 받아서 출력하기 positive
+    let positive = arr.filter((a)=> a > 0);
+    console.log(positive);
+    console.log(" --------------- ");
+    //filter사용해서 양수배열 받아서 출력하기 negative
+    let negative = arr.filter((a)=> {  return a < 0 });
+    console.log(negative);
+    console.log(" --------------- ");
+    
+    //map을 사용해서 음의 정수를 전부 양수로 바꾸어 전환하기
+    let result = arr.map( (a)=> {
+            if( a < 0) return -a; 
+            else return a;
+    });
+    result.forEach((a)=> console.log(a));
+    </script>

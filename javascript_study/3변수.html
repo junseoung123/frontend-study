@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수</title>
+</head>
+<body>
+    <h1> 변수 선언</h1>
+</body>
+</html>
+<script>
+    var name="홍길동";
+    var age=20;
+    var tel='123-4567';
+    let dept='컴퓨터공학과';
+    let addr='서울시';
+
+    console.log(name+" "+age+" "+tel+" "+dept+" "+addr);
+    console.log( `이름 ${name} 나이 ${age} 전번 ${tel} 전공 ${dept} 주소 ${addr}` );
+
+    let a=10;
+    let b=20;
+    
+    console.log(` ${a} + ${b} = ${a+b} `);
+    console.log(` ${a} - ${b} = ${a-b} `);
+    console.log(` ${a} * ${b} = ${a*b} `);
+    console.log(` ${b} / ${a} = ${b/a} `);
+    console.log(` ${b} % ${a} = ${b%a} `);
+
+    a++;
+    b++;
+    let c=0;
+    c+=a;
+    console.log(` ${a}   ${b}   ${c}`);
+    //NaN = not a number 숫자가 아니다
+
+    //상수 : 변하지 않는수 static final int
+    const PI=3.14;
+    console.log(`반지름이 11인원의 넓이= ${PI*a*a} `);
+    // PI = PI+10,0; 오류남 상수라서 못바꿈
+    PI +=10;
+    console.log(`${PI}`);
+
+</script>

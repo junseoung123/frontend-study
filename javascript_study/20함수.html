@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    //자바 매소드 오버로딩 add(a); add(a b); 오버라이딩 매소드 구현하는것
+    // 오버라이딩: 상속관계에서 부모메소드를 자식 메소드가 고쳐서쓰는것 void add(a) {구현내용다르게}
+    // 자바스크립트 함수를 오버로딩할수없다
+    function add( a=5, b=10, c=0, d=0 ) {
+        if(a!==0 && b!==0 && c===0 && d===0)   return a+b;
+        else if( a!==0 && b!==0 && c!==0 && d===0) return a+b+c;
+        else if( a!==0 && b!==0 && c!==0 && d!==0) return a+b+c+d;
+    }
+    console.log(add(8,7,9,6));
+</script>

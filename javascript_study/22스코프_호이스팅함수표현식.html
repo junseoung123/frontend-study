@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    showName(); //호이스팅 아래에있는 함수를 끌어올린다
+
+    var name="David Kwon"
+    function showName() {
+        var name = "YunHak Kwon";
+        if(true){
+            var name="홍길동";
+            console.log(name);// 홍길동
+        }
+        console.log(name); //홍길동
+    }  //함수가끝나야 홍길동이 안나온다 : scope
+
+    showName();
+    console.log(name);// David Kwon
+
+    showVar();//호이스팅 아래에있는 함수를 끌어올린다
+
+    function showVar() {
+        i=0;
+        while(i<3) {
+            var name = "김유신";
+            console.log(name);  //김유신 x3
+            i++;
+        }
+        console.log(name); //김유신
+    } //함수가 끝나야 김유신이 안니온다 : scope
+
+    showVar();
+</script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28화살표함수</title>
+</head>
+<body>
+    <h3> 화살표함수만들기</h3>
+    
+</body>
+</html>
+<script>
+    //함수식에서 function과 함수이름을 생략하고 (매개변수)=> 로 바꾼다
+    //함수의 처리내용이 1줄인경우 {}생략하고 return생략가능
+
+    function add(a,b) {
+        return a+b;
+    }
+    //1. 함수표현식으로 선언
+    //2 화살표함수로 선언
+    let add1 = function(a,b) {
+        return a+b;
+    }
+    let add2 =(a,b)=>(a+b);
+
+    console.log(add(10,2));
+    console.log(add1(10,2));
+    console.log(add2(10,2));
+</script>

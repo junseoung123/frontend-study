@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50속성조작</title>
+</head>
+<body>
+    <img id="image">
+    <h1 id="clock"> </h1>
+</body>
+</html>
+<script>
+    let loadData = () => {
+
+        let clock = document.getElementById("clock"); 
+        setInterval(
+            ()=> {
+                let now = new Date();
+                clock.innerHTML = now.toString();
+            }, 1000
+        )
+
+       let image = document.getElementById("image");
+       image.src = "./img/logo.png";
+       image.alt = "로고이미지";
+       image.width = "100";
+       image.height = "200";
+
+       document.body.setAttribute('data-custom', 'value');
+       let altCont=document.body.getAttribute('data-Custom');
+       alert(altCont);
+    } 
+    window.onload = loadData;
+</script>

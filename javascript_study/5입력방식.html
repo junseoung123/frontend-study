@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5. 입력방식</title>
+</head>
+<body>
+    <form action="" method="">
+        <label>
+            이름:
+            <input type="text" name="username" id="username">
+       </label> <br>
+       <label>
+        나이:
+        <input type="text" name="userage" id="userage">
+       </label> <br>
+       <label>
+        전화번호:
+        <input type="text" name="userphone" id="userphone">
+       </label> <br>
+        <label>
+            이메일:
+            <input type="text" name="useremail" id="useremail">
+       </label> <br>
+       <button type="button" onclick="goDisplay1()">출력하기1</button>
+       <button type="button" onclick="goDisplay2()">출력하기2</button>
+    </form>
+</body>
+</html>
+<script>
+    //출력하기1 함수선언하고 id속성으로 입력받아서 출력하기
+    //출력하기2 함수선언하고 name속성으로 입력받아서 출력하기
+    function goDisplay1() {
+        var idname = document.getElementById("username").value;
+        var idage = document.getElementById("userage").value;
+        var idphone = document.getElementById("userphone").value;
+        var idemail = document.getElementById("useremail").value;
+        console.log(` ${idname} ${idage} ${idphone} ${idemail} `);
+       [idname, idage,idphone,idemail].forEach(alert);
+        
+
+    }
+    function goDisplay2() {
+        var idname = document.getElementByName("username")[0].value;
+        var idage = document.getElementByName("userage")[0].value;
+        var idphone = document.getElementByName("userphone")[0].value;
+        var idemail = document.getElementByName("useremail")[0].value;
+        console.log(` ${idname} ${idage} ${idphone} ${idemail} `);
+       [idname, idage,idphone,idemail].forEach(alert);
+
+    }
+</script>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>29 화살표함수</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let fruits = ["사과", "딸기", "포도", "참외", "배", "파인애플", "복숭아", "토마토"];
+    //과일을 출력하는데 함수에다 보내서 출력하게만들기
+    function display( a ){
+         console.log(a);
+    }
+
+    let display1 = function(a) { console.log(a)};
+    let display2 = (a)=>console.log(a);
+
+    fruits.forEach( display ); //display함수는 사용자가 만들었지만 시스템함수(호출자)는 forEach함수
+    fruits.forEach( display1 );
+    fruits.forEach( display2 );
+
+    fruits.forEach((a)=> console.log(a + "삼성과일상회, "));
+
+    let message = ()=> {alert("Test");};
+    message();
+
+    let message1 = (name)=> {alert(name + "님 환영합니다");};
+    message1("홍길동");
+</script>

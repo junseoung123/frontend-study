@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>51 이벤트 조작</title>
+</head>
+<body>
+    <button id="button1"> 버튼 </button>
+</body>
+</html>
+<script>
+    // let loadData = function( event ) {
+    //     alert( event );
+    // }
+
+    let button = document.getElementById("button1");
+    let button2 = document.getElementById("button2");
+     
+    let clickData = ()=>{
+        
+        let buttonOK="이곳은 버튼을 눌렀을때 수행되는곳";
+        console.log(buttonOK);
+        let result = document.getElementById("result");
+        let resultVal = document.getElementById("result").innerHTML;
+        console.log(resultVal);
+        resultVal++;
+        document.getElementById("result").innerHTML = resultVal;
+       
+        }
+    
+        let resetData = ()=> {
+        return false;
+    }    
+        button.ondblclick = clickData;
+        button2.ondblclick = resetData;
+</script>

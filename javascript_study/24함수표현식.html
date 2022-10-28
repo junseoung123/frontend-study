@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24 함수표현식</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    //함수표현식 형식
+    /* let 변수명 = function (매개변수) {
+        함수처리내용
+    }
+    
+    
+    자바스크립트는 모든 변수와 함수가 참조변수이다*/
+   /* let result1 = add(4,5);
+    console.log(result1);
+    호이스팅안됀다*/ 
+
+    let add = function(a,b) {
+        return a+b;
+    }
+    let result = add(4,5);
+    console.log(result);
+
+    result = add(4,5,3);
+    console.log(result);
+
+    result = add(4);
+    console.log(result);
+
+    result = add("a","b");
+    console.log(result);
+
+    let a = 10;
+    let b = a;
+    console.log(b); 
+
+    let sub = add;
+    result = sub(10,20);
+    console.log(result);
+
+    let sub2 = sub;
+    result = sub2("I", "love");
+    console.log(result);
+    
+</script>

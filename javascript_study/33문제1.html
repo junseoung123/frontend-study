@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "result"> </div>
+    <div class="result2"> </div>
+    <div id="result3"> </div>
+    
+</body>
+</html>
+<script>
+    let arr = [1,2,3,4,5,6,7,8,9,10];
+    let result = "";
+    arr.forEach( (a) => {
+        result = result + a + "<br>";
+    });
+    console.log(result);
+    document.getElementById("result").innerHTML = result;
+
+    let scores=[
+        {name:"홍길동", kor:90, eng:80, mat:70},  //item 한덩어리
+        {name:"야야야", kor:80, eng:80, mat:80},
+        {name:"갸갸갸", kor:70, eng:70, mat:70},
+        {name:"냐냐냐", kor:60, eng:60, mat:70},
+        {name:"댜댜댜", kor:100, eng:100, mat:90},
+        {name:"먀먀먀", kor:100, eng:100, mat:100},
+    ];
+    result="";
+    let result1="";
+    scores.forEach((item)=>{
+        result1 = result1 + item.name + "&nbsp" + item.kor + "&nbsp" + item.eng + "&nbsp" + item.mat + "&nbsp" + "<br>";
+    });
+    console.log(result1);
+    document.getElementById("result").innerHTML = result1;
+
+    let person = {name:"홍길동", kor:"90", eng:"80", mat:"70"};
+    console.log(person.name, person.kor, person.eng, person.mat);
+    result = ` ${person.name} ${person.kor} ${person.eng} ${person.mat} `;
+    document.getElementsByClassName("result2")[0].innerHTML = result;
+    
+    // object.entries를 이용하면 키와 값으로 된 객체를 활용할 수 있음
+    for( [key, entry] of Object.entries(person)) {
+        console.log(key,person[key]);
+        //console.log(key,person.key); 안된다
+    }
+
+    result="";
+    for( [key, entry] of Object.entries(person)) {
+        result = result + person[key] + "&nbsp; &nbsp";
+        //console.log(key,person.key); 안된다
+    }
+    document.getElementById("result3").innerHTML = result;
+
+    </script>

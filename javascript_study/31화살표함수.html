@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let limit = 10;
+    let sum=0;
+    let i;
+
+    for(i=1; i<=limit; i++) {
+        sum += i;
+    }
+
+    console.log(sum);
+
+    let words = ["school", "boy", "girl", "hospital", "rain", "rainbow", "respect", "submit", "default"];
+
+    words.forEach((a)=> {console.log(a.toUpperCase(), a.length)});
+
+    let capitals = words.filter((a)=>a.length >= 5)
+                         .map((a)=>a.toUpperCase());
+                         console.log(capitals);
+
+    //forEach() : 반환을 하지 않습니다
+    //map() : 반환을 합니다
+    let arr=[1,2,3,4,5]
+    //arr 배열안에 요소를 *2해서 다른 배열로 담기
+    let arr2 = arr.map((a)=> a*2);
+    //출력하기
+    arr2.forEach((a)=>console.log(a));
+
+    let arr3 = [1,4,-1,9,14,-8];
+    //위ㅢ 배열에서 양수만 구해서 *10해서 배열로 나타내기
+    let arr4 = arr3.filter((a)=> a>0).map((a)=> a*10);
+    arr4.forEach((a)=> console.log(a));
+
+    arr3.filter((a)=> a>0).map((a)=> a*10).forEach((a)=> console.log(a))
+
+    //2차원배열
+    arr5 = [ [1,2,3,4],[5,6,7,8],[9,10,11,12] ];
+    //배열구조 확인하기 위해서 map()함수를 이용해서 배열을 구조를 확인 할수도있다.
+    arr5.map((item,index,arr6)=> {
+           console.log("item : ", item);
+           console.log("index : ", index);
+           console.log("arr6 : ", arr6);
+    });
+    arr6 = arr5.map((item, index, a)=>{ return item.map((a)=>a*a);});
+
+    console.log(arr6);
+
+    //2차원배열로된것의 전체요소 출력하기
+    arr6.forEach((item)=>{
+        item.forEach((a)=>
+        console.log((a)));
+    });
+    </script>

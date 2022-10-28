@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>38 데이터</title>
+</head>
+<body>
+    
+</body>
+</html>
+<scrpit>
+
+    console.log("전체데이터 갯수 출력방법1 :", data["meta"]["total_count"]);
+    console.log("전체데이터 갯수 출력방법2 :", data.meta.total_count);
+    let doc = data.documents;
+    doc.forEach( (obj)=> {
+        console.log(obj.address.address_name);
+        console.log(obj.road_address.address_name);
+    });
+</scrpit>

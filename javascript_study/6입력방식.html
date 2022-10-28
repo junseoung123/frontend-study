@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6. 입력방식 만약에 id가 복수개 name이 복수개이면</title>
+</head>
+<body>
+    <form>
+        <input type="text" name="num2" id="id1"> 입력연습
+        <input type="text" name="num2" id="id1"> 입력연습
+        <input type="text" name="num2" id="id1"> 입력연습
+        <input type="text" name="num2" id="id1"> 입력연습
+        <input type="text" name="num2" id="id1"> 입력연습
+        <button type="button" onclick="goDisplay1()"> id속성클릭</button>
+        <button type="button" onclick="goDisplay2()"> name속성클릭</button>
+    </form>
+</body>
+</html>
+<script>
+    function goDisplay1() {
+        let id1 = document.getElementById("id1");
+        console.log(id1.value);
+    }
+    function goDisplay2() {
+        //name값이 동일하더래도 
+           let num20 = document.getElementsByName("num2")[0];
+           let num21 = document.getElementsByName("num2")[1];
+           let num22 = document.getElementsByName("num2")[2];
+           let num23 = document.getElementsByName("num2")[3];
+           let num24 = document.getElementsByName("num2")[4];
+           console.log(` ${num20.value} ${num21.value} ${num22.value} ${num23.value} ${num24.value} `);
+    }
+</script>

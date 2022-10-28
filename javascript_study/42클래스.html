@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>41클래스</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    //클래스 만들기
+    class User{
+        
+        //생성자를 여러개 만들 필요없음 왜? ()또는 (매개변수)있는것 모두 처리 가능하기 때문
+       constructor(name="", age=0) {
+         this.name = name;
+         this.age = age;
+       }
+
+       display() {
+        let kk="100";
+        console.log(this.name, this.age, kk);
+       }
+    }
+
+    //클래스를 객체화하기
+    let user = new User( "홍길동", 20);
+    user.display();
+    let user1 = new User();
+    user1.display();
+    let user2 = new User("최진수");
+    use2r.display();
+</script>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var person = [
+            {"id":"admin", "name":"홍길동", "pw":"123"},
+            {"id":"a1001", "name":"이순신", "pw":"223"},
+            {"id":"a1002", "name":"최경미", "pw":"113"},
+            {"id":"a1003", "name":"박수진", "pw":"122"},
+            {"id":"b1001", "name":"나선수", "pw":"323"},
+         ];  
+
+         for(i=0; i<person.length; i++) {
+            console.log(person[i].id, person[i].name, person[i].pw);
+        }
+        for(item of person) {
+            if(item.id == "admin"){
+            console.log(person.name);
+        }
+        }
+</script>

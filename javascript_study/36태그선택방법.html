@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>36 태그선택하는 방법</title>
+</head>
+<body>
+    <h3> 화살표 함수 연습</h3>
+    <button class="buttons" type="button"> one </button>
+    <button class="buttons" type="button"> two </button>
+    <button class="buttons" type="button"> three </button>
+    <button class="buttons" type="button"> four </button>
+    <button class="buttons" type="button"> five </button>
+    <button class="buttons" type="button"> six </button>
+    <button class="buttons" type="button"> seven </button>
+    
+    <input type="text" name="nums" value="1"><br>
+    <input type="text" name="nums" value="10"><br>
+    <input type="text" name="nums" value="11"><br>
+    <input type="text" name="nums" value="12"><br>
+    <input type="text" name="nums" value="13"><br>
+
+    
+</body>
+</html>
+<script>
+    let array=[3,5,8,6,7,11,15,12,22];
+    //button 태그안에 innerHTML자료를 가지고 와서 console.log로 출력하기
+    //"console.log로 출력하기"의 의미는 웹브라우저에서 가져와서 백앤드로 보낼수있다는 의미
+    button_value = document.getElementsByClassName("buttons")[0].innerHTML; //배열요소 0에 위치에 값출력
+    console.log(button_value);
+    buttons = document.querySelectorAll(".buttons");
+    buttons.forEach((obj) => {
+        console.log(obj.innerHTML);
+    });
+    inputs = document.getElementsByName("nums");
+    inputs.forEach((obj)=> {
+        console.log(obj.value);
+    });
+    for(i=0; i<inputs.length; i++) {
+        console.log(inputs[i].value);
+    }
+</script>

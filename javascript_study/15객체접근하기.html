@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>빨간색</p>
+    <p>초록색</p>
+    <p>파란색</p>
+    <p>검은색</p>
+    <p>회색</p>
+    
+    <button type="button" onclick="goColorChange()"> 글자변경</button>
+</body>
+</html>
+<script>
+    function goColorChange() {
+    //각 색깔로 변경해주세요
+    let obj1 = document.getElementsByTagName("p");
+    obj1[0].style.color="#ff0000";
+    obj1[1].style.color="#00ff00";
+    obj1[2].style.color="#0000ff";
+    obj1[3].style.color="#f3f000";
+    obj1[4].style.color="#0033ff";
+
+    //배열을 이용해서 영어로 바꾸기
+    //1단계 영어명을 배열로 선언한다
+    let colors = ["red", "green", "blue", "black", "gray"];
+    console.log(colors.length); //배열의 길이를 구하기
+
+    for(i=0; i<colors.length; i++) {
+        obj1[i].innerHTML = colors[i];
+    }
+}
+</script>
