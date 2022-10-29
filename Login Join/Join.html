@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입페이지</title>
+    <link rel="stylesheet" href="Join.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>회원가입</h1>
+        <form name="registration" class="registartion-form" onsubmit="return formValidation()">
+          <table>
+            <tr>
+              <td><label for="name">이름:</label></td>
+              <td><input type="text" name="name" id="name" placeholder="이름"></td>
+            </tr>
+            <tr>
+              <td><label for="email">이메일:</label></td>
+              <td><input type="text" name="email" id="email" placeholder="이메일주소"></td>
+            </tr>
+            <tr>
+              <td><label for="password">비밀번호:</label></td>
+              <td><input type="password" name="password" id="password"></td>
+            </tr>
+            <tr>
+              <td><label for="phoneNumber">전화번호:</label></td>
+              <td><input type="text" name="phoneNumber" id="phoneNumber"></td>
+            </tr>
+            <tr>
+              <td><label for="gender">성별:</label></td>
+              <td>남성: <input type="radio" name="gender" value="male">
+                여성: <input type="radio" name="gender" value="female">
+            </tr>
+            <tr>
+              <td><label for="language">언어</label></td>
+              <td>
+                <select name="language" id="language">
+                  <option value="">언어선택</option>
+                  <option value="Korean">한국어</option>
+                  <option value="English">English</option>
+                  <option value="Chinese">中文</option>
+                  <option value="Japanese">日語</option>
+                  <option value="Spanish">español</option>
+                  <option value="Russian">français</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="zipcode">나이:  </label></td>
+              <td><input type="number" name="zipcode" id="zipcode"></td>
+            </tr>
+            <tr>
+              <td><label for="about">소개</label>:</label></td>
+              <td><textarea name="about" id="about" placeholder="간단한소개"></textarea></td>
+            </tr>
+            <tr>
+              <td colspan="2"><input type="submit" class="submit" value="회원가입" /></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+</body>
+</html>
