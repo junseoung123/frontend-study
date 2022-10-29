@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <p> 누르세요 </p>
+</body>
+</html>
+<script>
+    //제이쿼리의 기본 형식   $(선택자).함수명(매개변수...) { };
+    //자바스크립트에서 윈도우로 로딩되자마자 수행해라
+    //제이쿼리에서 윈도우 로딩되자마자 수행해라
+    /* 제이쿼리는 항상 아래 문장안에서 수행된다고 생각하면됨
+    $(document).ready(function() {
+
+    });*/
+    $(document).ready( function() {
+       $("p").click( function() { 
+            alert("Hello jQuery!!!");
+       });        
+    });
+</script>

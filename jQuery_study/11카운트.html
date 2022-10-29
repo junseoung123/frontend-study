@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    현재카운트 : <input type="text" name="" id="counter" value="0"> <br>
+    <button type="button" id="btnIncrease"> 증가 </button> &nbsp; &nbsp;
+    <button type="button" id="btnDecrease"> 감소 </button> &nbsp; &nbsp;
+</body>
+</html>
+<script>
+    $(function() {
+        $("#btnIncrease").click(()=>{
+            let value = parseInt($("#counter").val())+1;
+            result = value
+            $("#counter").val(result);
+        });
+
+        $("#btnDecrease").click(()=>{
+            let value = parseInt($("#counter").val())-1;
+            result = value
+            $("#counter").val(result);
+        });
+    });
+</script>

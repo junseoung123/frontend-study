@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1 id="blue"> 파랗게</h1>
+    <h2 id="red"> 빨갛게</h2>
+    <p id="t1" class="pstyle"> <strong>텍스트</strong></p>
+    <p id="t2" class="pstyle"> 텍스트</p>
+    <p id="t3" class="pstyle"> 텍스트</p>
+    
+</body>
+</html>
+<script>
+    $(function() {
+        //$("#blue").attr('style', 'color:blue');
+        $("#blue").prop('style', 'color:blue');
+        $("#blue").html('<u> blue </u>', 'color:blue');
+        $("#red").prop('style', 'color:red');
+        // t1을 클릭하면 텍스트 글자가 --> text로 변경됨
+        $("#t1").click(()=>{
+            $('.pstyle')[0].innerHTML = 'text';
+            $('#t1').prop('style', 'color:magenta');
+        });
+    });
+</script>

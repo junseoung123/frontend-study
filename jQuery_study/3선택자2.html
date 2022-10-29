@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1> Header </h1>
+    <h1> Header </h1>
+    <h1> Header </h1>
+    <img id="image1">
+    <img id="image2">
+    <img id="image3">
+    <!--<a href="https://placeholder.com"><img src="https://via.placeholder.com/150"></a>-->
+    
+</body>
+</html>
+<script>
+    $(function() {
+        $("h1").css('color', 'red');
+        $('h1').css('background', 'black');
+       // let src = $('script').attr('src');
+        //document.write(src);
+        alert($('meta').attr('charset'));
+        alert($('meta').attr('name'));
+       /* for( index=1; index<4; index++) {
+        $("#image" + index).attr( { 
+              alt: "제이쿼리의 속성을 이용한 이미지입니다",
+              src: function(index) {
+                   let size = (index + 1) * 100;
+                   return "https://via.placeholder.com/" + size
+              }
+        });*/
+        $('img').attr('alt', '이미지 설명').attr('src', 'https://via.placeholder.com/300').attr('width', '100');
+        $('img').attr({
+            src: function(index) {
+                let size = (index + 1) * 100;
+                return 'http://via.placeholder.com/' + size;
+            }
+        }) //교제 11-6은 img 태그를 3개만들고 하시오
+    });
+</script>

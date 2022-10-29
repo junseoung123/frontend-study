@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 선택자1 </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <p> 태그를 이용한 선택자 </p>
+    <p> 태그를 이용한 선택자 </p>
+    <p> 태그를 이용한 선택자 </p>
+    <p> 태그를 이용한 선택자 </p>
+    <button type="button" id="btnPress">누르세요</button>
+    <button type="button" id="btnPress2">보이기</button>
+</body>
+</html>
+<script>
+    $( function() {
+        // $(document).ready(function() {
+        // let bShow = true;             ------------------ 방법1
+        // $("#btnPress").click(function() {
+        //     if(bShow) $("p").hide();
+        //     else $("p").show();
+        //     bShow != bShow;
+        // });
+
+        // let btnPress = document.getElementById("btnPress"); ---- 방법2
+        // btnPress.addEventListener("click", ()=> {
+        //     let p = document.getElementsByTagName("p");
+        //     for( i=0; i<p.length; i++) {
+        //         p[i].style.display = "none";
+        //     }
+        // }); 
+
+        // let btnPress2 = document.getElementById("btnPress2");
+        // btnPress2.addEventListener("click", ()=> {
+        //     let p = document.getElementsByTagName("p");
+        //     for( i=0; i<p.length; i++) {
+        //         p[i].style.display = "block";
+        //     }
+        // }); 
+
+        $("#btnPress").click(()=> {
+            $("p").toggle();
+        });
+    });
+</script>

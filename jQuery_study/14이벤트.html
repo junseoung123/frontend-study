@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <p> hover Event </p>
+</body>
+</html>
+<script>
+    $(function(){
+    //p테그 부분에 hover 되면 콘솔창에 enter나오게 하기
+    // 속성을 배경색을 cyan으로 하기 
+    //p테그 부분에 hover 에서 벗어나면 콘솔창에 leave나오게하기 배경색 없애기
+    $('p').hover(()=> {
+        console.log('enter');
+        $('p').prop('style', 'backgroundColor: cyan');
+    
+
+    ()=>{
+        console.log("leave");
+        $("p").attr("style", "background-color:'' ");
+    }
+    });
+
+    });
+</script>

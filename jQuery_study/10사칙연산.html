@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    x: <input type="text" id="xvalue"> <br>
+    y: <input type="text" id="yvalue"> <br>
+
+    result : <input type="text" id="result"> <br>
+    <button type="button" id="btnAdd"> 덧셈 </button>
+    <button type="button" id="btnSub"> 뺄셈 </button>
+    <button type="button" id="btnMul"> 곱셈 </button>
+    <button type="button" id="btnDiv"> 나눗셈 </button>
+</body>
+</html>
+<script>
+    $(function() {
+       $("#btnAdd").click(()=>{calc('+')});
+       $("#btnSub").click(()=>{calc('-')});
+       $("#btnMul").click(()=>{calc('*')});
+       $("#btnDiv").click(()=>{calc('/')});
+      
+
+    });
+
+    function calc(opt) {
+        let xvalue = parseInt($("#xvalue").val());
+        let yvalue = parseInt($("#yvalue").val());
+        if(opt == '+') result = xvalue + yvalue;
+        else if(opt == '-') result = xvalue - yvalue;
+        else if(opt == '*') result = xvalue * yvalue;
+        else if(opt == '/') result = xvalue / yvalue;
+
+        $("#result").val(result);
+    }
+</script>
