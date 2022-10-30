@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Malgun Gothic";
+}
+
+body {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    
+}
+.top{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    z-index: 10;
+    position: fixed;
+   
+}
+
+.top ul li #logo{
+    width: 250px; /* 정렬하려는 요소의 넓이를 반드시 지정 */
+    display : block;
+    margin : auto;
+    margin-top: -60px;
+
+}
+
+
+.top ul li #search{
+    float: right;
+    margin-top: -100px;
+    margin-right: 200px;
+}
+
+.top ul li #MyPage{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-top: -150px;
+    float: right;
+    margin-right: 100px;
+}
+
+.top ul li #cartMenu{
+    float: right;
+    width: 80px;
+    height: 70px;
+    margin-top: -140px;
+    
+}
+
+.top ul #right{
+    width: 100px; /* 정렬하려는 요소의 넓이를 반드시 지정 */
+    float: right;
+    margin-top: -10px;
+
+}
+
+
+
+
+.label{
+    width: 100%;
+    height: 47px;
+    background-color: rgb(182, 34, 34);
+    z-index: 10;
+    position: fixed;
+    top:+110px;
+    
+}
+.label ul #left :hover > a {
+    color:silver;
+    margin: 0;
+}
+.label ul #left a{
+    float: left;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    padding: 0px;
+}
+.label ul #right a{
+    float: right;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    padding: 0px;
+}
+
+.Main-header {
+    margin-top: 200px;
+    margin-bottom: 500px;
+    float: right;
+    height: 100%;
+    width: 93%;
+    position: relative;
+}
+#Look{
+    margin-right: 90px;
+}
+#p1{
+    margin-right: 10px;
+}
+#p2{
+    margin-right: 10px;
+}
+#p3{
+    margin-right: 10px;
+}
+#p4{
+    width: 250px;
+    margin-right: 10px;
+    
+}
+.sale #sale{
+    width: 100%;
+    margin-top: +155px;
+}
+
+.Main-header h1{
+    text-align: center;
+    display:block; 
+    margin:auto;
+    margin-bottom: 30px;
+}
+.product-list{
+    text-align: center;
+    display:block; 
+    margin:auto;
+    margin-bottom: 50px;
+    
+}
+.product-list a {
+    text-decoration: none;
+    color:black;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino,serif;
+}
+
+.product-list .Outter h1{
+    display : block;
+    margin : auto;
+    text-align: center;
+}
+.jm-font-price{
+    margin-bottom: 200px;
+}
+.Pants-price{
+    margin-bottom: 200px;
+}
+.Cap-price{
+    margin-bottom: 200px;
+}
+.Bag-price{
+    margin-bottom: 200px;
+}
+#wrap {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: -100px;
+    bottom: 0px;
+    text-align: center;
+    border-top: 1px solid #c4c4c4;
+    padding-top: 15px;
+    color: #808080;
+    font-size: 11px;
+    margin-top: +200px;
+  }
+  footer a {
+    display: inline-block;
+    margin: 0 20px 10px 20px;
+    color: #808080; font-size: 11px;
+  }
+  
+  footer a:visited {
+    color: #808080;
+  }
+  
+  footer p {
+    margin-top: 0; margin-bottom: 0;   
+  }
+  
+  footer p span {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+
+
+
+
+

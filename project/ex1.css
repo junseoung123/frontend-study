@@ -1,0 +1,40 @@
+.top #menu{
+    float: right;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top #menu li{
+    float: left;
+    margin-left: 50px;
+    line-height: 60px;
+    
+}
+
+.top #menu li{
+    float: left;
+    margin-left: 50px;
+    line-height: 60px;
+    
+}
+
+
+#search{
+    
+    
+    top: -3px;
+    width: 100px;
+
+}
+#MyPage{
+   
+    top: -3px;
+    width: 40px;
+}
+#cartMenu{
+    
+    
+    top: -3px;
+    width: 40px;
+}
