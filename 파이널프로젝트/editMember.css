@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Malgun Gothic";
+}
+body{
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  }
+  .top{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    z-index: 10;
+    position: fixed;
+    top: 0%;
+   
+}
+
+.top ul li #logo{
+    width: 250px; /* 정렬하려는 요소의 넓이를 반드시 지정 */
+    display : block;
+    margin : auto;
+    margin-top: -60px;
+
+}
+
+
+.top ul li #search{
+    float: right;
+    margin-top: -100px;
+    margin-right: 200px;
+}
+
+.top ul li #MyPage{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-top: -150px;
+    float: right;
+    margin-right: 100px;
+}
+
+.top ul li #cartMenu{
+    float: right;
+    width: 80px;
+    height: 70px;
+    margin-top: -140px;
+    
+}
+.top ul #right{
+  width: 100px; /* 정렬하려는 요소의 넓이를 반드시 지정 */
+  float: right;
+  margin-top: -10px;
+
+}
+
+
+
+
+.label{
+  width: 100%;
+  height: 47px;
+  background-color: rgb(182, 34, 34);
+  z-index: 10;
+  position: fixed;
+  top:+110px;
+  
+}
+.label ul #left :hover > a {
+  color:silver;
+  margin: 0;
+}
+.label ul #left a{
+  float: left;
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  padding: 0px;
+}
+.label ul #right a{
+  float: right;
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  padding: 0px;
+}
+
+.Main-header {
+  margin-top: 200px;
+  margin-bottom: 500px;
+  float: right;
+  height: 100%;
+  width: 93%;
+  position: relative;
+}
+#Look{
+  margin-right: 90px;
+}
+#p1{
+  margin-right: 10px;
+}
+#p2{
+  margin-right: 10px;
+}
+#p3{
+  margin-right: 10px;
+}
+#p4{
+  width: 250px;
+  margin-right: 10px;
+  
+}
+article{
+  position: absolute;
+  left: 20%;
+  right: 20%;
+}
+  table {
+    width: 100%;
+    border-top: 1px solid #444444;
+    border-collapse: collapse;
+  }
+  th, td {
+    border-bottom: 1px solid #444444;
+    padding: 10px;
+  }
+  .td1 {
+    background-color: #e3f2fd;
+  }
+  .loginImg {
+    width: 100px;
+    position: relative;
+    margin-top: 20px;
+  }
+  #loginButton{
+    width: 120px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: auto;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    margin-top: 50px;
+    display:block;
+
+    border-radius: 50px;
+    
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+   
+
+    }
+    footer {
+      width: 100%;
+      height: -100px;
+      bottom: 0px;
+      text-align: center;
+      border-top: 1px solid #c4c4c4;
+      padding-top: 1300px;
+      padding-bottom: 100px;
+      color: #808080;
+      font-size: 11px;
+      margin-top: +200px;
+    }
+    footer a {
+      display: inline-block;
+      margin: 0 20px 10px 20px;
+      color: #808080; font-size: 11px;
+    }
+    
+    footer a:visited {
+      color: #808080;
+    }
+    
+    footer p {
+      margin-top: 0; margin-bottom: 0;   
+    }
+    
+    footer p span {
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    .leftbanner {
+      margin-left: 82%;
+      margin-top: -77% ;
+      max-height: 130%;
+
+      position: absolute;
+  }
+  
+  .rightbanner {
+      margin-left: 0%;
+      margin-top: -76% ;
+      max-height: 130%;
+      position: absolute;
+  }
+  
+  .bottombanner {
+      margin-left: 23%;
+      margin-top: -0%;
+      max-height: 20px;
+      max-width: 20%;
+      position: relative;
+      margin-bottom: 20%;
+  }
+  
+  

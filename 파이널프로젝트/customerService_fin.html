@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEOUL : 고객센터</title>
+    <link rel="stylesheet" type="text/css" href="cscss.css">
+    <script type="text/javascript" src="Main.js"></script>
+    <style>
+        /*구글 웹 폰트 적용*/
+       /*@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+    
+        //.jm-font{
+            font-family: 'Jeju Myeongjo', serif;
+            color: rgb(0, 0, 0);
+        }*/
+      </style>
+</head>
+<body>
+    <header>
+       
+        <div class="top">
+            <ul id="menu">
+                <li id="center">
+                    <a href="#">
+                        <img src="./img/logo.png" alt="홈으로" id="logo" onclick="moveWhite_login()">
+                    </a>
+                </li>
+                
+                <li id="right">
+                    <a href="cart.html" > 
+                       <img src="./img/cart2.png" alt="장바구니" id="cartMenu">    
+                    </a>
+                </li>
+                <li id="right">
+                    <a href="myPage.html" > 
+                       <img src="./img/myPage.png" alt="나의정보" id="MyPage">    
+                    </a>
+                </li>
+                <li id="right">
+                    <a herf="#">
+                   <input type="text" id="search" placeholder="검색">
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+        <div class="label">
+            <ul>
+                <li id="left" class="head1">
+                    <a href="#" id="hang" class="headerMenu1" onclick="notready()"> 행사상품</a>
+                </li>
+                <li id="left" class="head2">
+                    <a href="#" class="headerMenu2" onclick="notready()" > 남성의류</a> 
+                   
+            
+                    
+                </li>
+                <li id="left" class="head3">
+                    
+                        <a href="#" class="headerMenu3" onclick="notready()"> 여성의류</a>
+                    
+                </li>
+                <li id="left" class="head4">
+                    <a href="#" class="headerMenu4" onclick="notready()"> 신발</a>
+                    
+                </li>
+                <li id="left" class="head5">
+                    <a href="#" class="headerMenu5" onclick="notready()"> 악세사리</a>
+            
+           
+            <!-- <li id="right">
+                <a href="#" > 회원가입 </a>
+            </li> -->
+            <li id="right">
+                <a href="#" id="welcomeComment" > </a>
+            </li>
+            <li id="right">
+                <a href="customerService_fin.html" > 고객센터 </a>
+            </li>
+          </ul>
+        </div>
+    </header>
+
+    
+    <div class="wrap">
+        <h1> 고객센터</h1>
+        <div class="tab_menu">
+            <ul class="list">
+                <li class="is_on">
+                    <a href="#tab1" class="btn" style="border: 1px solid black; border-top: 3px solid black;">FAQ</a>
+                    <div id="tab1" class="cont">
+                        <table class="table" style="width:1100px; border-top:3px solid black">
+                            <colgroup>
+                                <col width="15%">
+                                <col width="85%">
+
+                            </colgroup>
+                            <thead>
+                                <th> 구분 </th>
+                                <th> 질문내용 </th>
+
+                            </thead>
+                            <tbody id="tbody1">
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                </li>
+                <li>
+                    <a href="#tab2" class="btn" style="border: 1px solid black; border-top: 3px solid black;">Q&A</a>
+                    <div id="tab2" class="cont">
+                        <table class="table" style="width:1100px; border-top:3px solid black">
+                            <colgroup>
+                                <col width="15%">
+                                <col width="75%">
+                                <col width="10%">
+
+                            </colgroup>
+                            <thead>
+                                <th> 구분 </th>
+                                <th> 질문내용 </th>
+                                <th> 작성자 </th>
+
+                            </thead>
+                            <tbody id="tbody2">
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                </li>
+                <li>
+                    <a href="#tab3" class="btn" style="border: 1px solid black; border-top: 3px solid black;">공지사항</a>
+                    <div id="tab3" class="cont">
+                        <table class="table" style="width:1100px; border-top:3px solid black">
+                            <colgroup>
+                                <col width="15%">
+                                <col width="75%">
+                                <col width="10%">
+
+                            </colgroup>
+                            <thead>
+                                <th> 번호 </th>
+                                <th> 내용 </th>
+                                <th> 작성날짜 </th>
+
+                            </thead>
+                          <tbody id="tbody3">
+                                
+                            </tbody>
+
+                        </table>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+   
+
+    <div class="bottombanner">
+            <a href="#"><img src="./img/bottomBanner.PNG" ></a>
+    </div>
+    <footer>
+        <nav>
+            <a href='https://instagram.com' target='_blank'>Instagram</a> |
+            <a href='https://github.com' target='_blank'>Github</a>
+        </nav>
+        <p>
+            <span>Company : (주)서울샾스튜디오         |     Ceo : 이준성 오동현 유화준</span><br/>
+            <span>Address : 서울특별시 강남구 삼성동 </span><br/>
+            <span>이메일 : seoul@seoul.com</span><br/>
+            <span></span><br/>
+            <span>이용약관 | 개인정보처리방침 | 이메일주소무단수집거부</span><br/>
+            <span>Copyright 2020. cocoder. All Rights Reserved.</span>
+        </p>
+    </footer>
+
+    
+</body>
+</html>
+<script>
+    const tabList = document.querySelectorAll('.tab_menu .list li');
+    for (let i = 0; i < tabList.length; i++) {
+        tabList[i].querySelector('.btn').addEventListener('click', function (e) {
+            e.preventDefault();
+            for (let j = 0; j < tabList.length; j++) {
+                tabList[j].classList.remove('is_on');
+            }
+            this.parentNode.classList.add('is_on');
+        });
+    }
+
+    let faqList = [
+        { type: "로그인/정보", content: "아이디와 비밀번호가 기억나지 않아요" },
+        { type: "로그인/정보", content: "회원정보 수정은 어디서 하나요?" },
+        { type: "상품문의", content: "구매했을 때보다 가격이 떨어졌어요. 차액 환불이 되나요?" },
+        { type: "상품문의", content: "재고가 없어요. 언제쯤 구입할 수 있을까요?" },
+        { type: "결제수단", content: "결제하는 방법에 따라 할인이 있나요?" },
+        { type: "결제수단", content: "결제 방법에는 어떤 것들이 있나요?" },
+        { type: "주문", content: "상품을 받는 주소(배송지) 등록은 어떻게 하나요?" },
+        { type: "기타", content: "주문한 상품이 일부만 도착했어요" },
+        { type: "배송 일반", content: "일반 배송 상품은 언제 배송 되나요?" },
+        { type: "취소/반품(환불)", content: "반품접수는 어떻게 하나요?" },
+        { type: "취소/반품(환불)", content: "반송장 입력, 수정은 어떻게 하나요?" },
+        { type: "교환/반품", content: "상품은 보냈는데 언제 교환상품이 배송되나요?" },
+        { type: "교환/반품", content: "같은 브랜드 다른 상품으로 교환 가능 한가요?" },
+        { type: "교환/반품", content: "상품을 받았는데 교환하고 싶어요." },
+        { type: "취소/반품(환불)", content: "실제 카드 취소나 금액은 언제 입금되나요?" },
+        { type: "취소/반품(환불)", content: "상품은 보냈는데 언제 환불 되나요?" },
+        { type: "취소/반품(환불)", content: "상품을 받았는데 환불하고 싶어요." },
+        { type: "취소/반품(환불)", content: "주문을 취소(옵션변경)를 하고 싶어요." }
+
+
+    ];
+    let qnaList = [
+        { type: "배송", content: "배송기간 확인이 가능할까요?", writer: "홍길동" },
+        { type: "취소/환불", content: "물건수령한지 15일정도 되었는데, 환불이 가능할까요?", writer: "이순신" },
+        { type: "배송", content: "배송완료라고 뜨는데 물건을 못 받았습니다.", writer: "강감찬" },
+        { type: "상품문의", content: "사이즈 확인 한 번 부탁드립니다.", writer: "유관순" },
+        { type: "상품문의", content: "**** 티셔츠 구입하려고 합니다. 사이즈 확인 부탁드립니다.", writer: "유화준" },
+        { type: "배송", content: "배송기간 확인이 가능할까요?", writer: "홍길동" },
+        { type: "취소/환불", content: "물건수령한지 15일정도 되었는데, 환불이 가능할까요?", writer: "이순신" },
+        { type: "배송", content: "배송완료라고 뜨는데 물건을 못 받았습니다.", writer: "강감찬" },
+        { type: "상품문의", content: "사이즈 확인 한 번 부탁드립니다.", writer: "유관순" },
+        { type: "상품문의", content: "**** 티셔츠 구입하려고 합니다. 사이즈 확인 부탁드립니다.", writer: "유화준" },
+        { type: "배송", content: "배송기간 확인이 가능할까요?", writer: "홍길동" },
+        { type: "취소/환불", content: "물건수령한지 15일정도 되었는데, 환불이 가능할까요?", writer: "이순신" },
+        { type: "배송", content: "배송완료라고 뜨는데 물건을 못 받았습니다.", writer: "강감찬" },
+        { type: "상품문의", content: "사이즈 확인 한 번 부탁드립니다.", writer: "유관순" },
+        { type: "상품문의", content: "**** 티셔츠 구입하려고 합니다. 사이즈 확인 부탁드립니다.", writer: "유화준" },
+        { type: "배송", content: "배송기간 확인이 가능할까요?", writer: "홍길동" },
+        { type: "취소/환불", content: "물건수령한지 15일정도 되었는데, 환불이 가능할까요?", writer: "이순신" }
+        
+
+    ];
+    let noticeList = [
+        { num: 1, content: "고객센터 운영시간 확대 안내", date: "2022-06-13" },
+        { num: 2, content: "개인정보처리방침 개정 내용 사전 안내 (5/1~)", date: "2022-06-11" },
+        { num: 3, content: "고객 보상 지원 제도 시행 안내", date: "2022-05-22" },
+        { num: 4, content: "택배사 파업 여파 해소 및 배송 정상화 안내", date: "2022-05-01" },
+        { num: 5, content: "폴러스터프 일부 상품의 권장 소비자 가격 변경 안내", date: "2022-04-28" },
+        { num: 6, content: "스토어 포인트 적립 방식 개편 안내", date: "2022-04-15" },
+        { num: 7, content: "택배사 파업 종료 및 여파로 인한 정상화 지연 안내", date: "2022-04-05" },
+        { num: 8, content: "친구 및 쪽지 서비스 종료 안내", date: "2022-04-01" },
+        { num: 9, content: "회원 등급별 혜택 개편 안내", date: "2022-03-15" },
+        { num: 10, content: "8월 20% 쿠폰 발행 및 후속 조치 관련", date: "2022-03-03" },
+        { num: 11, content: "정책 변경에 따른 부적절한 닉네임 일괄 변경 조치 안내", date: "2022-02-28" },
+        { num: 12, content: "닉네임 등록 정책 변경 안내", date: "2022-02-28" },
+        { num: 13, content: "장바구니 상품 보관 정책 변경 안내", date: "2022-02-28" },
+        { num: 14, content: "스토어 업데이트 뉴스 댓글 서비스 중단 안내", date: "2022-02-15" },
+        { num: 15, content: "후기 적립금 지급 정책 개정 연기 안내", date: "2022-02-13" },
+        { num: 16, content: "후기 적립금 지급 정책 변경 안내 (6/1~)", date: "2022-02-09" },
+        { num: 17, content: "무신사 물류센터 방역 배송 안내", date: "2022-02-01" }
+        
+        
+
+    ];
+
+
+    function faqListData() {
+        let tbody = document.getElementById("tbody1");
+
+        faqList.forEach((obj) => {
+
+
+            let row = tbody.insertRow(tbody.rows.length); // tr 태그를 만듬.
+            // 2. 새로운 칸 3칸을 만든다.
+            let cell0 = row.insertCell(0); // td 태그를 만듬
+            let cell1 = row.insertCell(1);
+
+            // 3. 데이터를 기입한다.
+            cell0.innerHTML = obj.type;
+            cell1.innerHTML ='<a href="#">'+obj.content+'</a>';
+            
+        });
+
+    }
+    function qnaListData() {
+        let tbody = document.getElementById("tbody2");
+
+        qnaList.forEach((obj) => {
+
+
+            let row = tbody.insertRow(tbody.rows.length); // tr 태그를 만듬.
+            // 2. 새로운 칸 3칸을 만든다.
+            let cell0 = row.insertCell(0); // td 태그를 만듬
+            let cell1 = row.insertCell(1);
+            let cell2 = row.insertCell(2);
+
+
+            // 3. 데이터를 기입한다.
+            cell0.innerHTML = obj.type;
+            cell1.innerHTML = '<a href="#">'+obj.content+'</a>';
+            cell2.innerHTML = obj.writer;
+
+        });
+
+    }
+    function noticeListData() {
+        let tbody = document.getElementById("tbody3");
+
+        noticeList.forEach((obj) => {
+
+
+            let row = tbody.insertRow(tbody.rows.length); // tr 태그를 만듬.
+            // 2. 새로운 칸 3칸을 만든다.
+            let cell0 = row.insertCell(0); // td 태그를 만듬
+            let cell1 = row.insertCell(1);
+            let cell2 = row.insertCell(2);
+
+            // 3. 데이터를 기입한다.
+            cell0.innerHTML = obj.num;
+            cell1.innerHTML = '<a href="#">'+obj.content+'</a>';
+            cell2.innerHTML = obj.date;
+
+        });
+
+    }
+
+    window.onload = faqListData();
+    window.onload = qnaListData();
+    window.onload = noticeListData();
+
+    function welcome() {
+        let sample = [{ id: "member1", pw: "aa1234" }];
+        sampleAcc = sample[0];
+
+        document.getElementById("welcomeComment").innerHTML = sample[0].id + " 님 환영합니다."
+    }
+
+    window.onload = welcome();
+
+    function notready(){
+        alert("해당 페이지는 준비 중에 있습니다.")
+    }
+
+</script>       

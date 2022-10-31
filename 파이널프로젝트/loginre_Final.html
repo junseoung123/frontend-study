@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEOUL : 로그인</title>
+    <link rel="stylesheet" type="text/css" href="logincssre.css">
+    <script type="text/javascript" src="Main.js"></script>
+    <style>
+        /*구글 웹 폰트 적용*/
+       /*@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+    
+        //.jm-font{
+            font-family: 'Jeju Myeongjo', serif;
+            color: rgb(0, 0, 0);
+        }*/
+      </style>
+</head>
+<body>
+    <header>
+       
+        <div class="top">
+            
+            <ul id="menu">
+                <li id="center">
+                    <a href="#">
+                        <img src="./img/logo.png" alt="홈으로" id="logo" onclick="moveWhite()">
+                        
+                    </a>
+                </li>
+                
+                <li id="right">
+                    <a href="#" > 
+                       <img src="./img/cart2.png" onclick="afterlogin()" alt="장바구니" id="cartMenu">    
+                    </a>
+                </li>
+                <li id="right">
+                    <a href="#" > 
+                       <img src="./img/myPage.png" onclick="afterlogin()" alt="나의정보" id="MyPage">    
+                    </a>
+                </li>
+                <li id="right">
+                    <a herf="#">
+                   <input type="text" id="search" placeholder="검색">
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+        <div class="label">
+            <ul>
+                <li id="left" class="head1">
+                    <a href="#" id="hang" class="headerMenu1" onclick="notready()"> 행사상품</a>
+                </li>
+                <li id="left" class="head2">
+                    <a href="#" class="headerMenu2" onclick="notready()" > 남성의류</a> 
+                   
+            
+                    
+                </li>
+                <li id="left" class="head3">
+                    
+                        <a href="#" class="headerMenu3" onclick="notready()"> 여성의류</a>
+                    
+                </li>
+                <li id="left" class="head4">
+                    <a href="#" class="headerMenu4" onclick="notready()"> 신발</a>
+                    
+                </li>
+                <li id="left" class="head5">
+                    <a href="#" class="headerMenu5" onclick="notready()"> 악세사리</a>
+                    
+                
+            
+           
+            <li id="right">
+                <a href="JoinRe_final.html" > 회원가입 </a>
+            </li>
+            <li id="right">
+                <a href="loginre_Final.html" > 로그인 </a>
+            </li>
+            <li id="right">
+                <a href="#" onclick="afterlogin()" > 고객센터 </a>
+            </li>
+          </ul>
+        </div>
+    </header>
+
+    <div id="all">
+        <h1> 로그인 </h1>
+        <hr><br>
+
+        <div id="id"><input type="text" id="idInput" name="idInput" placeholder="ID를 입력하세요"> </div> <br>
+        <div id="pw"><input type="password" id="pwInput" name="pwInput" placeholder="Password를 입력하세요"> </div> <br>
+
+        <div id="susLogin" style="font-size: 10px; text-align: left; margin-left: 40px;"> <input type="checkbox"
+                id="checkbox"> 로그인 상태 유지하기 </div> <br>
+
+        <button type="button" id="loginButton" onclick="login()"> 로그인 </button>
+        <button type="button" id="joinButton" onclick="toJoin()"> 회원가입 </button>
+        <hr>
+        <ul id="find">
+            <li><a href="#" id="findId">ID 를 잊어버리셨나요? </a> </li>
+            <li><a href="#" id="findPw"> Password 를 잊어버리셨나요?</a></li>
+        </ul>
+        <label id="loginMethod">
+            <br>
+            <a href="#"> <img src="./img/facebooklogin.PNG" alt="페이스북 로그인" class="loginImg"> </a>
+            <a href="#"> <img src="./img/kakaologin.PNG" alt="페이스북 로그인" class="loginImg"> </a>
+            <a href="#"> <img src="./img/naverlogin.PNG" alt="페이스북 로그인" class="loginImg"> </a>
+
+        </label>
+        <div class="leftbanner">
+        <a href="#"><img src="./img/banner1.PNG" ></a>
+        </div>
+
+        <div class="rightbanner">
+            <a href="#"><img src="./img/banner2.PNG" ></a>
+            </div>
+
+        <div class="bottombanner">
+            <a href="JoinRe_final.html"><img src="./img/topbanner.PNG" ></a>
+            </div>
+
+    </div>
+    
+    <footer>
+        <nav>
+            <a href='https://instagram.com' target='_blank'>Instagram</a> |
+            <a href='https://github.com' target='_blank'>Github</a>
+        </nav>
+        <p>
+            <span>Company : (주)서울샾스튜디오         |     Ceo : 이준성 오동현 유화준</span><br/>
+            <span>Address : 서울특별시 강남구 삼성동 </span><br/>
+            <span>이메일 : seoul@seoul.com</span><br/>
+            <span></span><br/>
+            <span>이용약관 | 개인정보처리방침 | 이메일주소무단수집거부</span><br/>
+            <span>Copyright 2020. cocoder. All Rights Reserved.</span>
+        </p>
+    </footer>
+
+    
+</body>
+</html>
+
+<script>
+    function login() {
+        let sample = [{ id: "member1", pw: "aa1234" }];
+        sampleAcc = sample[0];
+
+        let sampleId = document.getElementsByName("idInput")[0].value;
+        let samplePw = document.getElementsByName("pwInput")[0].value;
+        if (sampleId == sampleAcc.id && samplePw == sampleAcc.pw) {
+            alert("로그인 성공하였습니다.");
+            location.href = 'MainAfterLogin_final.html';
+        } else if (sampleId == sampleAcc.id && samplePw != sampleAcc.pw) {
+            alert("패스워드를 잘못 입력하였습니다. 다시 입력하세요.")
+        } else if (sampleId != sampleAcc.id && samplePw == sampleAcc.pw) {
+            alert("아이디를 잘못 입력하였습니다. 다시 입력하세요.")
+        } else if (sampleId == "" && samplePw == "") {
+            alert("아이디와 패스워드를 입력하세요.")
+        } else {
+            alert("아이디와 패스워드가 틀렸습니다. 다시 입력하세요.")
+        }
+        console.log(`${sampleId}`);
+        console.log(`${samplePw}`);
+    }
+
+    function toJoin() {
+        location.href = 'JoinRe_final.html';
+    }
+
+    function afterlogin(){
+        alert("로그인 후 이용이 가능합니다.")
+    }
+
+    function notready(){
+        alert("해당 페이지는 준비 중에 있습니다.")
+    }
+</script>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEOUL : 회원가입</title>
+    <link rel="stylesheet" type="text/css" href="joincss.css">
+    <script type="text/javascript" src="Main.js"></script>
+    <style>
+        /*구글 웹 폰트 적용*/
+       /*@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+    
+        //.jm-font{
+            font-family: 'Jeju Myeongjo', serif;
+            color: rgb(0, 0, 0);
+        }*/
+      </style>
+</head>
+<body>
+    <header>
+       
+        <div class="top">
+            
+            <ul id="menu">
+                <li id="center">
+                    <a href="#">
+                        <img src="./img/logo.png" alt="홈으로" id="logo" onclick="moveWhite()">
+                        
+                    </a>
+                </li>
+                
+                <li id="right">
+                    <a href="#" > 
+                       <img src="./img/cart2.png" onclick="afterlogin()" alt="장바구니" id="cartMenu">    
+                    </a>
+                </li>
+                <li id="right">
+                    <a href="#" > 
+                       <img src="./img/myPage.png" onclick="afterlogin()" alt="나의정보" id="MyPage">    
+                    </a>
+                </li>
+                <li id="right">
+                    <a herf="#">
+                   <input type="text" id="search" placeholder="검색">
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+        <div class="label">
+            <ul>
+                <li id="left" class="head1">
+                    <a href="#" id="hang" class="headerMenu1" onclick="notready()"> 행사상품</a>
+                </li>
+                <li id="left" class="head2">
+                    <a href="#" class="headerMenu2" onclick="notready()" > 남성의류</a> 
+                   
+            
+                    
+                </li>
+                <li id="left" class="head3">
+                    
+                        <a href="#" class="headerMenu3" onclick="notready()"> 여성의류</a>
+                    
+                </li>
+                <li id="left" class="head4">
+                    <a href="#" class="headerMenu4" onclick="notready()"> 신발</a>
+                    
+                </li>
+                <li id="left" class="head5">
+                    <a href="#" class="headerMenu5" onclick="notready()"> 악세사리</a>
+                    
+                
+            
+           
+            <li id="right">
+                <a href="JoinRe_final.html" > 회원가입 </a>
+            </li>
+            <li id="right">
+                <a href="loginre_Final.html" > 로그인 </a>
+            </li>
+            <li id="right">
+                <a href="#" onclick="afterlogin()" > 고객센터 </a>
+            </li>
+          </ul>
+        </div>
+    </header>
+<div id = all>
+    <h1> 회원가입 </h1>
+    <hr>
+    <form>
+        <ul>
+            <li> ID<input type="text" id="id" class="join" placeholder="8~20자로 입력" style="margin-left: 150px;"> <button
+                    type="button" id="idCheck" alt="회원id 중복확인" onclick="checkIdDuplicated()"> 중복확인 </button> </li>
+            <li> Password<input type="password" id="pw" class="join" placeholder="영문, 숫자, 특수기호 포함 10자 이상"
+                    style="margin-left: 94px;"> </li>
+            <li> Password 확인<input type="password" id="pwCheck" class="join" placeholder="Password 다시 한 번 입력"
+                    style="margin-left: 56px;">
+                <div id="pwMsg" style="margin-left: 110px;"> </div>
+            </li>
+            <li> 이름 <input type="text" id="pw" class="join" placeholder="이름 입력" style="margin-left: 129px;"> </li>
+            <li> 성별 <input type="radio" id="sex" class="select" value="남성" checked
+                    style="margin-left: 130px; margin-top: 20px;"> 남성 <input type="radio" id="sex" class="select"
+                    value="여성"> 여성 </li>
+            <li> 전화번호 <input type="text" id="phone" class="join" placeholder="000-0000-0000 형식으로 입력"
+                    style="margin-left: 96px;"> </li>
+            <li> 이메일 <input type="text" id="email" class="join" placeholder="이름 입력" style="margin-left: 112px;"> </li>
+            <li> 주소1 <input type="text" id="email" class="join" placeholder="주소 입력" style="margin-left: 117px;"> </li>
+            <li> 주소2 <input type="text" id="email" class="join" placeholder="나머지 주소 입력" style="margin-left: 117px;">
+            </li>
+
+
+        </ul>
+    </form>
+    <br>
+    <hr>
+
+    <button type="button" id="loginButton" onclick="" class="joinmember"> 회원가입 </button>
+    <button type="button" id="joinButton" onclick="location.href='Main_final.html'" class="joinmember"> 홈으로 </button>
+</div>
+
+<div class="leftbanner">
+    <a href="#"><img src="./img/banner3.PNG" ></a>
+    </div>
+
+<div class="rightbanner">
+        <a href="#"><img src="./img/banner2.PNG" ></a>
+</div>
+
+<div class="bottombanner">
+        <a href="#"><img src="./img/bottomBanner.PNG" ></a>
+</div>
+</body>
+
+<footer>
+    <nav>
+        <a href='https://instagram.com' target='_blank'>Instagram</a> |
+        <a href='https://github.com' target='_blank'>Github</a>
+    </nav>
+    <p>
+        <span>Company : (주)서울샾스튜디오         |     Ceo : 이준성 오동현 유화준</span><br/>
+        <span>Address : 서울특별시 강남구 삼성동 </span><br/>
+        <span>이메일 : seoul@seoul.com</span><br/>
+        <span></span><br/>
+        <span>이용약관 | 개인정보처리방침 | 이메일주소무단수집거부</span><br/>
+        <span>Copyright 2020. cocoder. All Rights Reserved.</span>
+    </p>
+</footer>
+</html>
+
+<script>
+    
+
+    function afterlogin(){
+        alert("로그인 후 이용이 가능합니다.")
+    }
+
+    function notready(){
+        alert("해당 페이지는 준비 중에 있습니다.")
+    }
+</script>

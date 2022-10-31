@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Malgun Gothic";
+}
+
+h1 {
+    margin-top:120px;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    
+    margin-top: 100px;
+    margin-left: 0%;
+    width: 800px;
+}
+.top{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    z-index: 10;
+    position: fixed;
+    margin-left: 0%;
+    margin-top: -12.6%;
+    
+   
+}
+
+.top ul li #logo{
+    width: 250px; /* 정렬하려는 요소의 넓이를 반드시 지정 */
+    display : block;
+    margin-left: 44%;
+    margin-top: -60px;
+    
+
+}
+
+.top ul li #search{
+    float: right;
+    margin-top: -100px;
+    margin-right: 200px;
+    
+}
+
+.top ul li #MyPage{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-top: -150px;
+    float: right;
+    margin-right: 100px;
+}
+
+.top ul li #cartMenu{
+    float: right;
+    width: 80px;
+    height: 70px;
+    margin-top: -140px;
+    
+}
+
+.top ul #right{
+    width: 100px; /* 정렬하려는 요소의 넓이를 반드시 지정 */
+    float: right;
+    margin-top: -10px;
+
+}
+
+
+
+
+.label{
+    width: 100%;
+    height: 47px;
+    background-color: rgb(182, 34, 34);
+    z-index: 10;
+    position: fixed;
+    top:+110px;
+    
+}
+.label ul #left :hover > a {
+    color:silver;
+    margin: 0;
+}
+.label ul #left a{
+    float: left;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    padding: 0px;
+}
+.label ul #right a{
+    float: right;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    padding: 0px;
+}
+
+.wrap ul {
+    list-style: none;
+    margin-top: 100px;
+}
+
+.wrap a {
+    text-decoration: none;
+    color: #333;
+    padding: 50px;
+    text-align: center;
+    margin-left: 0px;
+    position: relative;
+}
+
+.wrap {
+    
+    margin-top: 30%;
+    margin-left: 50%;
+    margin-bottom: 20%;
+    height: 1000px;
+    width: 1000px;
+}
+
+.tab_menu {
+    position: relative;
+}
+
+.tab_menu .list {
+    overflow: hidden;
+}
+
+.tab_menu .list li {
+    float: left;
+    margin-right: 14px;
+}
+
+.tab_menu .list .btn {
+    font-size: 13px;
+}
+
+.tab_menu .list .cont {
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background: white;
+    color: black;
+    text-align: center;
+    width: 1100px;
+    height: 900px;
+    line-height: 100px;
+    border: 10px;
+    border-color: black;
+}
+
+.tab_menu .list li.is_on .btn {
+    font-weight: bold;
+    color: red;
+}
+
+.tab_menu .list li.is_on .cont {
+    display: block;
+}
+
+#faqTable tr th {
+    padding: 50px;
+    color: black;
+    position: relative;
+    margin-top: -40px;
+}
+
+table {
+    text-align: left;
+    padding: 10px;
+    line-height: 60px;
+}
+
+.table thead th {
+    border-bottom: 1px solid black;
+    margin: 0;
+    
+}
+.table tr {
+    margin-left: 0 auto;
+}
+
+footer {
+    width: 100%;
+    height: -100px;
+    bottom: 0px;
+    text-align: center;
+    border-top: 1px solid #c4c4c4;
+    padding-top: 15px;
+    color: #808080;
+    font-size: 11px;
+    margin-top: +20%;
+    margin-left: 70%;
+  }
+  footer a {
+    display: inline-block;
+    margin: 0 20px 10px 20px;
+    color: #808080; font-size: 11px;
+  }
+  
+  footer a:visited {
+    color: #808080;
+  }
+  
+  footer p {
+    margin-top: 0; margin-bottom: 0;   
+  }
+  
+  footer p span {
+    display: inline-block;
+    margin-left: 20px;
+  }
+ 
+
+.bottombanner {
+    margin-left: 55%;
+    margin-top: 60%;
+    max-height: 20px;
+    max-width: 20%;
+    position: relative;
+}

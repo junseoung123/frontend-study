@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <title>SEOUL : 마이페이지</title>
+  <link rel="stylesheet" href="myPage.css">
+  <script type="text/javascript" src="Main.js"></script>
+</head>
+
+<body>
+  <header>
+       
+    <div class="top">
+        <ul id="menu">
+            <li id="center">
+                <a href="#">
+                    <img src="./img/logo.png" alt="홈으로" id="logo" onclick="moveWhite_login()">
+                </a>
+            </li>
+            
+            <li id="right">
+                <a href="cart.html" > 
+                   <img src="./img/cart2.png" alt="장바구니" id="cartMenu">    
+                </a>
+            </li>
+            <li id="right">
+                <a href="myPage.html" > 
+                   <img src="./img/myPage.png" alt="나의정보" id="MyPage">    
+                </a>
+            </li>
+            <li id="right">
+                <a herf="#">
+               <input type="text" id="search" placeholder="검색">
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="label">
+        <ul>
+            <li id="left" class="head1">
+                <a href="#" id="hang" class="headerMenu1" onclick="notready()"> 행사상품</a>
+            </li>
+            <li id="left" class="head2">
+                <a href="#" class="headerMenu2" onclick="notready()" > 남성의류</a> 
+               
+        
+                
+            </li>
+            <li id="left" class="head3">
+                
+                    <a href="#" class="headerMenu3" onclick="notready()"> 여성의류</a>
+                
+            </li>
+            <li id="left" class="head4">
+                <a href="#" class="headerMenu4" onclick="notready()"> 신발</a>
+                
+            </li>
+            <li id="left" class="head5">
+                <a href="#" class="headerMenu5" onclick="notready()"> 악세사리</a>
+        
+       
+        <!-- <li id="right">
+            <a href="#" > 회원가입 </a>
+        </li> -->
+        <li id="right">
+            <a href="#" id="welcomeComment" > </a>
+        </li>
+        <li id="right">
+            <a href="customerService_fin.html" > 고객센터 </a>
+        </li>
+      </ul>
+    </div>
+</header>
+  
+  <article>
+  <div class="wrap">
+    <div class="greenContainer">
+    </div>
+    <div class="summaryContainer">
+      <div class="item">
+        <b style="font-size: 25px;">홍길동</b><br>
+        <a href="editMember.html" type="button">회원정보</a>
+      </div>
+      <div class="item">
+        <div>상품후기</div>
+        <a href="#" class="number">3</a>
+
+      </div>
+      <div class="item">
+        <div>적립금</div>
+        <a href="#" class="number">200</a>
+
+      </div>
+    </div>
+    <div class="shippingStatusContainer">
+      <div class="title">
+        주문/배송조회
+      </div>
+      <div class="status">
+
+        <div class="item">
+          <div>
+            <div class="green number">6</div>
+            <div class="text">장바구니</div>
+          </div>
+          <div class="icon"> > </div>
+        </div>
+        <div class="item">
+          <div>
+            <div class="number">0</div>
+            <div class="text">결제완료</div>
+          </div>
+          <div class="icon"> > </div>
+        </div>
+        <div class="item">
+          <div>
+            <div class="green number">1</div>
+            <div class="text">배송중</div>
+          </div>
+          <div class="icon"> > </div>
+        </div>
+        <div class="item">
+          <div>
+            <div class="green number">3</div>
+            <div class="text">구매확정</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="order">
+      <button type="button" id="ordbtn" class="tblbtn">주문내역</button>
+      <button type="button" id="expbtn" class="tblbtn">배송내역</button>
+      <button type="button" id="cansbtn" class="tblbtn">취소/환불/교환</button>
+      <button type="button" id="inqbtn" class="tblbtn">문의사항</button>
+      <table id="ordtbl">
+        <tr style="background-color:#aaaaaa;">
+          <td colspan="2"> 구매내역</td>
+          <td> 유효기간/배송상태</td>
+          <td> 관리</td>
+        </tr>
+        <tr>
+          <td rowspan="2" style="background-color: #dcdcdc;">2022.06.25<br>
+            <sub>
+              주문번호<br>
+              123456789
+            </sub>
+          </td>
+          <td colspan="3">배송번호 : 987654321</td>
+        </tr>
+        <tr>
+
+          <td><img src="./img/옷.jpg" alt="jaket" style="width:100px;">
+            미니멀 데님자켓 크림
+            60000원<sub>(결제완료)</sub>
+          </td>
+          <td> 배송중<br>
+            <sub>xx택배<br>231568913</sub><br>
+            <button type="button">배송추적</button>
+          </td>
+          <td><button type="button">환불문의</button>
+            <button type="button">리뷰쓰기</button>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2" style="background-color: #dcdcdc;"><sub>총 주문 금액</sub><br>
+            60000원<br>
+            <button type="button">영수증 출력</button>
+          </td>
+          <td colspan="3" style="background-color: #dcdcdc;">배송지 정보 : <sub>홍길동, 010-1234-5678<br>[도로명주소]서울시 강남구
+              123-25</sub></td>
+        </tr>
+        <tr>
+          <td colspan="3" style="background-color: #dcdcdc;">배송지 메모:<sub>안전하게 보내주세요.</sub></td>
+        </tr>
+      </table>
+      <table id="exptbl" style="display:none;">
+        <caption>배송기본 정보</caption>
+        <tr>
+          <td style="background-color: #dcdcdc;">보내는분</td>
+          <td>서울쇼핑몰 강남점</td>
+        </tr>
+        <tr>
+          <td style="background-color: #dcdcdc;">받는분</td>
+          <td>홍길동</td>
+        </tr>
+        <tr>
+          <td style="background-color: #dcdcdc;">주소</td>
+          <td>서울시 강남구 123-25</td>
+        </tr>
+        <tr>
+          <td style="background-color: #dcdcdc;">상품정보</td>
+          <td>미니멀 데님자켓 크림</td>
+        </tr>
+        <tr>
+          <td style="background-color: #dcdcdc;">택배사</td>
+          <td>xx택배</td>
+        </tr>
+        <tr>
+          <td style="background-color: #dcdcdc;">운송장번호</td>
+          <td>95134861</td>
+        </tr>
+
+      </table>
+      <table id="canstbl" style="display:none;">
+
+        <tr style="background-color:#aaaaaa;">
+          <td>주문/클레임 정보</td>
+          <td>취소/환불 내역</td>
+          <td>환불 금액</td>
+          <td>상태</td>
+        </tr>
+        <tr>
+          <td style="background-color: #dcdcdc;">요청일<br>
+            2022.06.22<br>
+            <sub>12:42:53</sub>
+          </td>
+          <td><img src="./img/옷.jpg" alt="jaket" style="width:100px;"><strong style="padding-bottom: 20%;">미니멀 데님자켓
+              크림</strong><br>
+            1. 미니멀 데님자켓 크림<br><sub>(요청수량 1개| 60000원)</sub>
+          </td>
+          <td>60000원</td>
+          <td>환불완료</td>
+        </tr>
+
+
+      </table>
+      <table id="inqtbl" style="display:none;">
+        <tr style="background-color:#aaaaaa;">
+          <td>상품명</td>
+          <td>문의내용</td>
+          <td>등록일</td>
+          <td>답변여부</td>
+        </tr>
+
+      </table>
+    </div>
+    <div class="listContainer">
+      <a href="#" class="item">
+        <div class="icon">ii</div>
+        <div class="text">주문목록<span class="circle"></span></div>
+        <div class="right"> > </div>
+      </a>
+      <a href="#" class="item">
+        <div class="icon">ii</div>
+        <div class="text">상품후기</div>
+        <div class="right"> > </div>
+      </a>
+      <a href="#" class="item">
+        <div class="icon">ii</div>
+        <div class="text">상품문의</div>
+        <div class="right"> > </div>
+      </a>
+      <a href="#" class="item">
+        <div class="icon">ii</div>
+        <div class="text">할인쿠폰</div>
+        <div class="right"> > </div>
+      </a>
+      <a href="#" class="item">
+        <div class="icon">ii</div>
+        <div class="text">찜한상품</div>
+        <div class="right"> > </div>
+      </a>
+    </div>
+    <div class="listContainer">
+      <a href="#" class="item">
+        <div class="icon">ii</div>
+        <div class="text">
+          <span>적립금</span>
+          <span class="smallLight">
+            <span>|</span>
+            <span>보유 적립금</span>
+          </span>
+        </div>
+        <div class="right">
+          <span class="blct">200 point</span>
+          >
+        </div>
+      </a>
+      <a href="#" class="item">
+        <div class="icon">ii</div>
+        <div class="text">알림</div>
+        <div class="right"> > </div>
+      </a>
+      <a href="#" class="item">
+        <div class="icon">ii</div>
+        <div class="text">설정</div>
+        <div class="right"> > </div>
+      </a>
+    </div>
+    <div class="infoContainer">
+      <a href="#" class="item">
+
+        <div>공지사항</div>
+      </a>
+      <a href="#" class="item">
+
+        <div>이용안내</div>
+      </a>
+      <a href="#" class="item">
+
+        <div>고객센터</div>
+      </a>
+    </div>
+  </div>
+</article>
+
+<div class="leftbanner">
+  <a href="#"><img src="./img/banner3.PNG" ></a>
+  </div>
+
+<div class="rightbanner">
+      <a href="#"><img src="./img/banner4.PNG" ></a>
+</div>
+
+<div class="bottombanner">
+      <a href="#"><img src="./img/bottomBanner.PNG" ></a>
+</div>
+
+
+<footer>
+  <nav>
+      <a href='https://instagram.com' target='_blank'>Instagram</a> |
+      <a href='https://github.com' target='_blank'>Github</a>
+  </nav>
+  <p>
+      <span>Company : (주)서울샾스튜디오         |     Ceo : 이준성 오동현 유화준</span><br/>
+      <span>Address : 서울특별시 강남구 삼성동 </span><br/>
+      <span>이메일 : seoul@seoul.com</span><br/>
+      <span></span><br/>
+      <span>이용약관 | 개인정보처리방침 | 이메일주소무단수집거부</span><br/>
+      <span>Copyright 2020. cocoder. All Rights Reserved.</span>
+  </p>
+</footer>
+
+</body>
+
+</html>
+<script>
+  $(function () {
+    $("#ordbtn").click(() => {
+      $("#ordtbl").toggle();
+    });
+  });
+  $(function () {
+    $("#expbtn").click(() => {
+      $("#exptbl").toggle();
+    });
+  });
+  $(function () {
+    $("#cansbtn").click(() => {
+      $("#canstbl").toggle();
+    });
+  });
+  $(function () {
+    $("#inqbtn").click(() => {
+      $("#inqtbl").toggle();
+    });
+  });
+  function notready(){
+        alert("해당 페이지는 준비 중에 있습니다.")
+    }
+
+    function welcome() {
+        let sample = [{ id: "member1", pw: "aa1234" }];
+        sampleAcc = sample[0];
+
+        document.getElementById("welcomeComment").innerHTML = sample[0].id + " 님 환영합니다."
+    }
+
+    window.onload = welcome();
+</script>
