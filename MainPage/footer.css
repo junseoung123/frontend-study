@@ -1,0 +1,62 @@
+#footer {
+    background-color: #202020;
+    color: #555555;
+    text-align : center;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#footer_site {
+    padding-top: 15px;
+    word-spacing: 30px;
+}
+
+#footer_monott_site {
+    font-size: 13px;
+    word-spacing: 10px;
+}
+
+#footer_hr1 {
+    width: 600px;
+    background-color: #202020;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer_hr2 {
+    width: 600px;
+    background-color: #202020;
+    margin-top: 10px;
+}
+
+#footer_table {
+    padding-top: 10px;
+    display: inline-block;
+    line-height: 18px;
+}
+
+#footer_th1 {
+    padding-right: 35px;
+    color: #CC0000;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+#footer_th2 {
+    font-size: 11px;
+    font-weight: 600;
+    padding-right: 20px;
+    word-spacing: 1.5px;
+}
+
+#footer_th3 {
+    font-size: 11px;
+    font-weight: 600;
+    word-spacing: 1.5px;
+}
+
+#footer_td1 {
+    font-size: 11px;
+    font-weight: 600;
+    word-spacing: 1.5px;
+}
